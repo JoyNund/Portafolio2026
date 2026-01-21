@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Build output
-styles-compiled.css
-
 # OS files
 .DS_Store
 Thumbs.db
@@ -11,3 +8,5 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Note: styles-compiled.css is included for GitHub Pages deployment
