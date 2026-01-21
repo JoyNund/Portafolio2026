@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Portafolio profesional de John Chávez Zevallos",
   "scripts": {
+    "build": "npm run build:css",
     "build:css": "tailwindcss -i ./src/input.css -o ./styles-compiled.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./styles-compiled.css --watch"
   },
