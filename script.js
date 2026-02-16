@@ -101,6 +101,459 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Projects Data (from original script.js)
 const projects = [
     {
+        title: 'Flujo Comercial para Empresas',
+        description: 'Automatización completa del proceso de captación de leads',
+        image: 'project7/cover.png',
+        categories: ['Automatización', 'Marketing', 'CRM'],
+        tagline: 'De la campaña al cierre: automatiza todo el embudo de ventas sin intervención manual',
+        fullDescription: `
+            Sistema integral de automatización del flujo comercial que conecta campañas de
+            advertising (Google Ads, Facebook Ads, LinkedIn) con formularios de captación,
+            hojas de cálculo como backup, y un CRM propio (Controla CRM) donde los leads son
+            atendidos por agentes de IA (Controla Agentes) o asesores humanos.
+        `,
+        role: 'Arquitecto de Automatizaciones & Desarrollador Full Stack',
+        client: 'Controla Digital',
+        duration: '7 meses',
+        year: '2025',
+        challenge: `
+            Las empresas perdían leads valiosos por procesos manuales de captación y
+            seguimiento. La data de campañas se dispersaba en múltiples plataformas,
+            los formularios no se integraban con sistemas CRM, y el seguimiento dependía
+            de la iniciativa humana, resultando en oportunidades perdidas y baja conversión.
+        `,
+        solution: `
+            Creamos un flujo automatizado end-to-end: los CTAs de campañas dirigen a
+            formularios (integrados en plataformas de ads o landing pages), la data se
+            respalda automáticamente en Google Sheets, y mediante Google Apps Script se
+            sincroniza en tiempo real con Controla CRM, donde cada lead es asignado a un
+            agente de IA o asesor humano para seguimiento inmediato.
+        `,
+        process: [
+            {
+                title: 'Campañas y Formularios',
+                description: `
+                    Configuramos campañas en Google Ads, Facebook Ads y LinkedIn con CTAs
+                    optimizados que dirigen a formularios de captación. Estos pueden estar
+                    integrados nativamente en las plataformas de ads o alojados en landing
+                    pages personalizadas con tracking de conversiones.
+                `,
+                image: 'project7/p1.png',
+                caption: 'Estructura de campañas multi-plataforma'
+            },
+            {
+                title: 'Backup en Google Sheets',
+                description: `
+                    Implementamos un sistema de respaldo automático donde cada lead
+                    capturado se guarda instantáneamente en una hoja de cálculo de Google,
+                    proporcionando un backup accesible y permitiendo análisis ad-hoc
+                    sin depender del CRM.
+                `,
+                image: 'project7/p2.webp',
+                caption: 'Hoja de cálculo con leads capturados'
+            },
+            {
+                title: 'Integración con Apps Script',
+                description: `
+                    Desarrollamos scripts personalizados que monitorean cambios en la
+                    hoja de cálculo y sincronizan automáticamente los nuevos leads con
+                    Controla CRM, mapeando campos, normalizando datos y asignando
+                    etiquetas según la fuente de origen.
+                `,
+                image: 'project7/p3.webp',
+                caption: 'Script de sincronización automática'
+            },
+            {
+                title: 'Distribución en CRM',
+                description: `
+                    En Controla CRM, los leads se distribuyen automáticamente según
+                    reglas de asignación: por fuente, por valor estimado, por ubicación
+                    geográfica. Cada lead es atendido por Controla Agentes (IA) o
+                    asignado a un asesor humano según complejidad y prioridad.
+                `,
+                image: 'project7/p4.webp',
+                caption: 'Distribución automática de leads'
+            },
+            {
+                title: 'Seguimiento y Cierre',
+                description: `
+                    El sistema automatiza seguimientos mediante WhatsApp, email o SMS,
+                    registra todas las interacciones en el CRM, actualiza el estado del
+                    lead en el pipeline y notifica a los asesores cuando se requiere
+                    intervención humana para cierre.
+                `,
+                image: 'project7/p5.webp',
+                caption: 'Pipeline de seguimiento de leads'
+            }
+        ],
+        results: [
+            {
+                metric: '90%',
+                description: 'Reducción en tiempo de primer contacto'
+            },
+            {
+                metric: '3x',
+                description: 'Incremento en tasa de conversión'
+            },
+            {
+                metric: '100%',
+                description: 'Leads registrados sin pérdida de data'
+            },
+            {
+                metric: '70%',
+                description: 'Reducción en trabajo manual de seguimiento'
+            }
+        ],
+        learnings: [
+            {
+                title: 'La Velocidad es Clave',
+                description: `
+                    Contactar leads dentro de los primeros 5 minutos incrementa
+                    drásticamente la probabilidad de conversión. La automatización
+                    elimina los retrasos humanos.
+                `
+            },
+            {
+                title: 'Backup es Esencial',
+                description: `
+                    Tener un respaldo en Google Sheets proporcionó tranquilidad a los
+                    clientes y permitió análisis de data sin sobrecargar el CRM con
+                    consultas ad-hoc.
+                `
+            },
+            {
+                title: 'Integración Sin Fricción',
+                description: `
+                    Usar Google Apps Script como puente entre Sheets y el CRM resultó
+                    ser una solución económica, confiable y fácil de mantener para
+                    las PYMEs.
+                `
+            }
+        ]
+    },
+    {
+        title: 'Agentes de ventas',
+        description: 'Agentes de IA para atención al cliente y cierre de ventas en WhatsApp',
+        image: 'project6/cover.png',
+        categories: ['IA', 'WhatsApp', 'Automatización'],
+        tagline: 'Potencia tu negocio con agentes inteligentes que atienden, califican y cierran ventas 24/7',
+        fullDescription: `
+            Plataforma de creación y gestión de agentes de IA para WhatsApp Business. Permite
+            configurar modelos de lenguaje personalizados, definir personalidades y reglas de
+            conversación, vincular sesiones de WhatsApp mediante QR y monitorear todas las
+            interacciones con sistema de etiquetado inteligente.
+        `,
+        role: 'Desarrollador Full Stack & Ingeniero de IA',
+        client: 'Controla Digital',
+        duration: '6 meses',
+        year: '2025',
+        challenge: `
+            Las empresas necesitaban automatizar la atención al cliente y el proceso de ventas
+            en WhatsApp sin perder la calidad del trato humano. El desafío era crear agentes
+            que pudieran mantener conversaciones naturales, seguir instrucciones específicas
+            y escalar a humanos cuando fuera necesario.
+        `,
+        solution: `
+            Desarrollamos Controla Agentes, una plataforma que permite crear agentes de IA
+            configurables con modelos de lenguaje a elección, personalizar su personalidad
+            y reglas de negocio, vincularlos a sesiones de WhatsApp reales mediante escaneo
+            QR, y monitorear todas las conversaciones con un sistema de etiquetado para
+            análisis y mejora continua.
+        `,
+        process: [
+            {
+                title: 'Configuración del Agente',
+                description: `
+                    Diseñamos una interfaz intuitiva donde los usuarios pueden seleccionar
+                    el modelo de IA, definir instrucciones personalizadas, establecer la
+                    personalidad del agente (tono, estilo, formalidad) y configurar reglas
+                    de negocio específicas como horarios de atención y escalado a humanos.
+                `,
+                image: 'project6/p1.png',
+                caption: 'Panel de configuración del agente'
+            },
+            {
+                title: 'Vinculación con WhatsApp',
+                description: `
+                    Implementamos un sistema de vinculación mediante QR code que conecta
+                    el agente con una sesión real de WhatsApp Web, permitiendo que el agente
+                    opere desde un número existente sin necesidad de APIs costosas de
+                    WhatsApp Business.
+                `,
+                image: 'project6/p2.webp',
+                caption: 'Escaneo QR para vinculación'
+            },
+            {
+                title: 'Monitoreo y Etiquetado',
+                description: `
+                    Creamos un dashboard de monitoreo donde se pueden revisar todas las
+                    conversaciones del agente, agregar etiquetas personalizadas (ej: "lead
+                    caliente", "requiere seguimiento", "venta cerrada") y filtrar por estado,
+                    fecha o tipo de interacción para análisis y reporting.
+                `,
+                image: 'project6/p3.webp',
+                caption: 'Dashboard de conversaciones etiquetadas'
+            }
+        ],
+        results: [
+            {
+                metric: '80%',
+                description: 'Reducción en tiempo de respuesta'
+            },
+            {
+                metric: '24/7',
+                description: 'Disponibilidad del agente'
+            },
+            {
+                metric: '35%',
+                description: 'Incremento en tasa de cierre de ventas'
+            },
+            {
+                metric: '1000+',
+                description: 'Conversaciones manejadas por agente/mes'
+            }
+        ],
+        learnings: [
+            {
+                title: 'Personalidad Importa',
+                description: `
+                    Los agentes con personalidad bien definida y alineada a la marca
+                    lograron mayor engagement y confianza por parte de los clientes.
+                `
+            },
+            {
+                title: 'Escalado Oportuno',
+                description: `
+                    Identificar cuándo escalar a un humano es crucial. Los agentes deben
+                    reconocer sus limitaciones y transferir conversaciones complejas
+                    sin frustrar al usuario.
+                `
+            },
+            {
+                title: 'El Etiquetado Empodera',
+                description: `
+                    El sistema de etiquetado permitió a las empresas analizar patrones,
+                    identificar objeciones comunes y optimizar continuamente las
+                    respuestas del agente.
+                `
+            }
+        ]
+    },
+    {
+        title: 'Controla PM (Project manager)',
+        description: 'Gestor de proyectos híbrido con IA integrada',
+        image: 'project5/cover.png',
+        categories: ['Desarrollo web', 'Project Management', 'IA'],
+        tagline: 'La evolución en gestión de proyectos: Kanban, Gantt, calendario e IA colaborativa en un solo lugar',
+        fullDescription: `
+            Sistema completo de gestión de proyectos que combina lo mejor de múltiples
+            metodologías: vista Kanban para flujo visual, diagramas de Gantt para
+            planificación temporal, calendario para deadlines y un asistente de IA
+            integrado en cada tarea. Incluye gestión de roles, chat colaborativo,
+            notas personales y fusión de tareas en supertareas.
+        `,
+        role: 'Desarrollador Full Stack & Arquitecto de Software',
+        client: 'Controla Digital',
+        duration: '8 meses',
+        year: '2025',
+        challenge: `
+            Los equipos de proyecto necesitaban una herramienta que unificara múltiples
+            vistas de trabajo (Kanban, Gantt, calendario) sin perder funcionalidades
+            clave como colaboración en tiempo real, seguimiento de deadlines y asistencia
+            inteligente. Las soluciones existentes fragmentaban estas capacidades en
+            diferentes herramientas.
+        `,
+        solution: `
+            Creamos Controla PM, un project manager híbrido que integra vistas múltiples
+            intercambiables, sistema de roles granular, chat de equipo, notas personales,
+            fusión de tareas y un agente de IA conversacional integrado en cada tarea
+            que asiste en la planificación, priorización y ejecución del trabajo.
+        `,
+        process: [
+            {
+                title: 'Diseño del Sistema Híbrido',
+                description: `
+                    Desarrollamos un esquema cuasi-Kanban que mantiene la flexibilidad
+                    del método tradicional mientras incorpora elementos de planificación
+                    temporal. Cada tarea puede visualizarse como tarjeta, entrada de
+                    calendario o barra en diagrama de Gantt según la vista seleccionada.
+                `,
+                image: 'project5/p1.png',
+                caption: 'Vista híbrida Kanban-Gantt'
+            },
+            {
+                title: 'Integración de IA',
+                description: `
+                    Implementamos un agente de chat con IA entrenado para asistir en
+                    gestión de proyectos. Cada tarea tiene su propio agente contextual
+                    que puede ayudar con estimaciones, desglose de subtareas, identificación
+                    de dependencias y recomendaciones de priorización.
+                `,
+                image: 'project5/p2.webp',
+                caption: 'Agente de IA asistiendo en una tarea'
+            },
+            {
+                title: 'Dashboard Inteligente',
+                description: `
+                    Diseñamos un dashboard central con tarjetas de tareas filtrables por
+                    prioridad, estado y responsable. Incluye segmentación por vistas
+                    temporal (diaria, semanal, mensual) y alertas proactivas de deadlines
+                    próximos.
+                `,
+                image: 'project5/p3.webp',
+                caption: 'Dashboard con filtros inteligentes'
+            },
+            {
+                title: 'Colaboración en Tiempo Real',
+                description: `
+                    Construimos un sistema de chat colaborativo integrado, comentarios
+                    en tareas, asignación de responsables con notificaciones push y
+                    una microapp de notas personales para cada usuario, permitiendo
+                    capturar ideas rápidas sin salir de la plataforma.
+                `,
+                image: 'project5/p4.webp',
+                caption: 'Chat de equipo y notas personales'
+            }
+        ],
+        results: [
+            {
+                metric: '40%',
+                description: 'Mejora en cumplimiento de deadlines'
+            },
+            {
+                metric: '3x',
+                description: 'Reducción en reuniones de seguimiento'
+            },
+            {
+                metric: '85%',
+                description: 'Adopción por equipos en el primer mes'
+            },
+            {
+                metric: '500+',
+                description: 'Tareas asistidas por IA diariamente'
+            }
+        ],
+        learnings: [
+            {
+                title: 'Flexibilidad es Clave',
+                description: `
+                    Permitir que los usuarios cambien entre vistas (Kanban/Gantt/Calendario)
+                    según su preferencia personal aumentó significativamente la satisfacción
+                    y productividad del equipo.
+                `
+            },
+            {
+                title: 'IA Contextual Funciona',
+                description: `
+                    El agente de IA integrado directamente en el contexto de cada tarea
+                    demostró ser más efectivo que los asistentes generales, ya que
+                    comprende el estado, dependencias y historial específico.
+                `
+            },
+            {
+                title: 'Micro-herramientas Internas',
+                description: `
+                    La inclusión de notas personales y chat integrado redujo la necesidad
+                    de herramientas externas, manteniendo a los equipos enfocados en
+                    una sola plataforma.
+                `
+            }
+        ]
+    },
+    {
+        title: 'App-Center',
+        description: 'Tienda de aplicaciones y launcher para web apps de productividad',
+        image: 'project4/cover.png',
+        categories: ['Desarrollo web', 'Apps', 'UI/UX'],
+        tagline: 'Un ecosistema unificado para descubrir, adquirir y ejecutar web apps empresariales',
+        fullDescription: `
+            Plataforma integral que funciona como tienda de aplicaciones y launcher para web apps
+            de productividad empresarial. Los usuarios pueden explorar el catálogo de aplicaciones,
+            adquirir licencias y lanzar las apps directamente desde la plataforma, todo en un
+            mismo entorno centralizado.
+        `,
+        role: 'Desarrollador Full Stack & Diseñador de Producto',
+        client: 'Controla Digital',
+        duration: '5 meses',
+        year: '2025',
+        challenge: `
+            Las empresas necesitaban una forma sencilla de distribuir y gestionar sus web apps
+            de productividad entre los empleados. Existía la necesidad de unificar el acceso,
+            la gestión de licencias y la ejecución de aplicaciones en una sola plataforma
+            intuitiva y segura.
+        `,
+        solution: `
+            Desarrollamos App-Center, un hub centralizado que combina tienda de aplicaciones
+            con launcher integrado. Los usuarios pueden navegar el catálogo sin registrarse,
+            pero al adquirir una app e iniciar sesión, obtienen acceso inmediato desde la
+            sección "Mis Apps" o directamente desde las tarjetas del catálogo.
+        `,
+        process: [
+            {
+                title: 'Investigación y Arquitectura',
+                description: `
+                    Analizamos los flujos de usuarios y definimos una arquitectura que separa
+                    claramente el modo exploración (sin login) del modo usuario (con apps
+                    adquiridas), optimizando la experiencia de descubrimiento y acceso.
+                `,
+                image: 'project4/p1.png',
+                caption: 'Arquitectura de la plataforma'
+            },
+            {
+                title: 'Diseño de Interfaz',
+                description: `
+                    Creamos una interfaz limpia que prioriza el descubrimiento visual de
+                    aplicaciones, con tarjetas informativas, categorías claras y un sistema
+                    de estados que indica claramente qué apps están disponibles, adquiridas
+                    o en uso.
+                `,
+                image: 'project4/p2.webp',
+                caption: 'Diseño de la tienda de aplicaciones'
+            },
+            {
+                title: 'Desarrollo e Integración',
+                description: `
+                    Implementamos un sistema de autenticación seguro con gestión de licencias,
+                    launcher integrado que abre las apps en ventanas embebidas o pestañas
+                    nuevas, y sincronización en tiempo real del estado de cada aplicación.
+                `,
+                image: 'project4/p3.webp',
+                caption: 'Launcher integrado en acción'
+            }
+        ],
+        results: [
+            {
+                metric: '25+',
+                description: 'Web apps disponibles en el catálogo'
+            },
+            {
+                metric: '99.9%',
+                description: 'Uptime del launcher'
+            },
+            {
+                metric: '60%',
+                description: 'Reducción en tiempo de acceso a apps'
+            }
+        ],
+        learnings: [
+            {
+                title: 'Experiencia Sin Fricción',
+                description: `
+                    Permitir la exploración sin registro aumentó significativamente las
+                    conversiones, ya que los usuarios podían evaluar las apps antes de
+                    comprometerse.
+                `
+            },
+            {
+                title: 'Centralización Eficiente',
+                description: `
+                    Unificar tienda y launcher en una sola plataforma mejoró la adopción
+                    y redujo la resistencia al cambio en las empresas.
+                `
+            }
+        ]
+    },
+    {
         title: 'Escuela RE/MAX Focus',
         description: 'Plataforma de formación de agentes inmobiliarios',
         image: 'project1/cover.png',
@@ -189,7 +642,201 @@ const projects = [
         ]
     },
     {
-        title: 'Pawtrulla App',
+        title: 'Controla CRM',
+        description: 'CRM personalizable con integración de fuentes de datos múltiples',
+        image: 'project8/cover.png',
+        categories: ['CRM', 'Desarrollo web', 'Bases de Datos'],
+        tagline: 'Un CRM que se adapta a tu negocio: integra fuentes internas y externas en una sola plataforma',
+        fullDescription: `
+            CRM altamente personalizable que permite integrar múltiples fuentes de datos:
+            desde campañas de advertising hasta bases de datos externas como SUNAT (empresas
+            registradas) y el portal de proveedores del Estado. Cada fuente de datos ocupa
+            una pantalla independiente personalizable, con seguimiento de oportunidades
+            mediante tableros Kanban.
+        `,
+        role: 'Arquitecto de Software & Desarrollador Full Stack',
+        client: 'Controla Digital',
+        duration: '9 meses',
+        year: '2025',
+        challenge: `
+            Las empresas manejaban data dispersa en múltiples sistemas: leads de campañas
+            en plataformas de ads, información de empresas en SUNAT, proveedores estatales
+            en portales gubernamentales, y oportunidades en spreadsheets desconectados.
+            Necesitaban una vista unificada sin perder la capacidad de segmentar por fuente.
+        `,
+        solution: `
+            Diseñamos Controla CRM con una arquitectura modular de "pantallas por fuente".
+            Por defecto incluye datos de campañas de ads, pero permite agregar nuevas
+            fuentes (SUNAT, proveedores del Estado, APIs personalizadas) que se organizan
+            en pantallas independientes. El seguimiento de oportunidades usa un modelo
+            Kanban personalizable por pipeline.
+        `,
+        process: [
+            {
+                title: 'Arquitectura Modular',
+                description: `
+                    Desarrollamos una arquitectura basada en plugins donde cada fuente
+                    de datos es un módulo independiente con su propia pantalla, campos
+                    personalizados y reglas de mapeo. Esto permite agregar nuevas fuentes
+                    sin modificar el núcleo del sistema.
+                `,
+                image: 'project8/p1.png',
+                caption: 'Arquitectura modular del CRM'
+            },
+            {
+                title: 'Integración con SUNAT',
+                description: `
+                    Implementamos conectores con la API de SUNAT para consultar y importar
+                    datos de empresas registradas (RUC, razón social, estado, actividad
+                    económica), permitiendo enriquecer leads y validar prospectos
+                    automáticamente.
+                `,
+                image: 'project8/p2.webp',
+                caption: 'Pantalla de consulta SUNAT integrada'
+            },
+            {
+                title: 'Proveedores del Estado',
+                description: `
+                    Integramos conexión con el portal de proveedores del Estado (SEACE),
+                    permitiendo importar registros de proveedores activos, verificar
+                    habilitaciones y monitorear licitaciones relevantes para el negocio.
+                `,
+                image: 'project8/p3.webp',
+                caption: 'Módulo de proveedores del Estado'
+            },
+            {
+                title: 'Tableros Kanban',
+                description: `
+                    Diseñamos un sistema Kanban flexible donde cada fuente de datos puede
+                    tener su propio pipeline de seguimiento con columnas personalizables
+                    (ej: "Nuevo", "Contactado", "Propuesta", "Negociación", "Cerrado").
+                    Las oportunidades se mueven mediante drag-and-drop.
+                `,
+                image: 'project8/p4.webp',
+                caption: 'Tablero Kanban de oportunidades'
+            },
+            {
+                title: 'Vista Unificada de Contacto',
+                description: `
+                    Creamos un perfil unificado de contacto/empresa que consolida toda
+                    la información de las distintas fuentes: datos de SUNAT, interacciones
+                    de campañas, notas del CRM, historial de comunicaciones y oportunidades
+                    asociadas en una sola vista 360°.
+                `,
+                image: 'project8/p5.webp',
+                caption: 'Perfil 360° de contacto'
+            }
+        ],
+        results: [
+            {
+                metric: '5+',
+                description: 'Fuentes de datos integradas'
+            },
+            {
+                metric: '50%',
+                description: 'Reducción en tiempo de investigación de leads'
+            },
+            {
+                metric: '80%',
+                description: 'Mejora en calidad de data de prospectos'
+            },
+            {
+                metric: '25+',
+                description: 'Empresas usando el CRM'
+            }
+        ],
+        learnings: [
+            {
+                title: 'Flexibilidad sobre Rigidez',
+                description: `
+                    Permitir que cada empresa configure sus propias fuentes y pipelines
+                    resultó en mayor adopción que imponer una estructura fija.
+                `
+            },
+            {
+                title: 'Data Externa Enriquece',
+                description: `
+                    Integrar SUNAT y proveedores del Estado permitió a los equipos de
+                    ventas calificar leads con información oficial sin salir del CRM,
+                    ahorrando horas de investigación manual.
+                `
+            },
+            {
+                title: 'Kanban es Universal',
+                description: `
+                    El modelo Kanban resonó con equipos de ventas porque visualiza
+                    claramente el pipeline, identifica cuellos de botella y motiva
+                    el avance de oportunidades.
+                `
+            }
+        ]
+    },
+    {
+        title: 'Sonidos del Encierro',
+        description: 'Serie web trasmedia en el contexto de la pandemia',
+        image: 'project3/cover.png',
+        categories: ['Audiovisual', 'Ciberactivismo', 'Arte digital'],
+        tagline: 'La autogestión para levantar la escena músical local en tiempos de aislamiento social.',
+        fullDescription: `
+            Projecto de serie web multiplataforma para difundir e impulsar a artistas locales
+            en el contexto de la pandemia durante el año 2020.
+        `,
+        role: 'Director Creativo & Desarrollador',
+        client: 'Raw Productora',
+        duration: '8 meses',
+        year: '2020',
+        challenge: `
+            Se necesitaba lograr captar la atención del público local en un time-span relativa corto debido
+            a las condiciones del contexto de la emergencia sanitaria
+        `,
+        solution: `
+            Se desarrolló una estrategia multiplataforma en simultaneo con lanzamientos a lo largo de un mes,
+            esto incluyo: Campaña de expectativa en Redes Sociales y Youtube, desarrollo de página web, 
+            playlist de artistas protagonistas de la serie en spotify, un MOD para el juego web clone hero.
+        `,
+        process: [
+            {
+                title: 'Diseño de Plataforma',
+                description: `
+                    Desarrollamos una arquitectura web que facilita la
+                    navegación y descubrimiento de artistas, mientras mantenemos un
+                    enfoque en la experiencia de usuario con servicios conectados.
+                `,
+                image: 'project3/p1.webp',
+                caption: 'Plataforma web integrada'
+            }
+        ],
+        results: [
+            {
+                metric: '30+',
+                description: 'Artistas impulsados en la plataforma'
+            },
+            {
+                metric: '17K+',
+                description: 'Views'
+            }
+        ],
+        learnings: [
+            {
+                title: 'El Poder de la Comunidad',
+                description: `
+                    La participación activa de la comunidad en el desarrollo fue
+                    fundamental para crear una plataforma que realmente satisface
+                    las necesidades de los artistas.
+                `
+            },
+            {
+                title: 'Innovación Tecnológica',
+                description: `
+                    La integración con multimedios como videojuegos
+                    demostró ser lo suficiente innovadora como para
+                    otorgar un incremento en la atención de usuario.
+                `
+            }
+        ]
+    },
+    {
+        title: 'Pawtrulla App móvil',
         description: 'App para contratar paseos para perros en la ciudad de Trujillo',
         image: 'img/app1.webp',
         categories: ['Apps', 'UI/UX', 'Startup'],
@@ -262,70 +909,6 @@ const projects = [
                 description: `
                     El feedback constante de los usuarios nos permitió mejorar la aplicación
                     de manera significativa durante las primeras semanas de lanzamiento.
-                `
-            }
-        ]
-    },
-    {
-        title: 'Sonidos del Encierro',
-        description: 'Serie web trasmedia en el contexto de la pandemia',
-        image: 'project3/cover.png',
-        categories: ['Audiovisual', 'Ciberactivismo', 'Arte digital'],
-        tagline: 'La autogestión para levantar la escena músical local en tiempos de aislamiento social.',
-        fullDescription: `
-            Projecto de serie web multiplataforma para difundir e impulsar a artistas locales
-            en el contexto de la pandemia durante el año 2020.
-        `,
-        role: 'Director Creativo & Desarrollador',
-        client: 'Raw Productora',
-        duration: '8 meses',
-        year: '2020',
-        challenge: `
-            Se necesitaba lograr captar la atención del público local en un time-span relativa corto debido
-            a las condiciones del contexto de la emergencia sanitaria
-        `,
-        solution: `
-            Se desarrolló una estrategia multiplataforma en simultaneo con lanzamientos a lo largo de un mes,
-            esto incluyo: Campaña de expectativa en Redes Sociales y Youtube, desarrollo de página web, 
-            playlist de artistas protagonistas de la serie en spotify, un MOD para el juego web clone hero.
-        `,
-        process: [
-            {
-                title: 'Diseño de Plataforma',
-                description: `
-                    Desarrollamos una arquitectura web que facilita la
-                    navegación y descubrimiento de artistas, mientras mantenemos un
-                    enfoque en la experiencia de usuario con servicios conectados.
-                `,
-                image: 'project3/p1.webp',
-                caption: 'Plataforma web integrada'
-            }
-        ],
-        results: [
-            {
-                metric: '30+',
-                description: 'Artistas impulsados en la plataforma'
-            },
-            {
-                metric: '17K+',
-                description: 'Views'
-            }
-        ],
-        learnings: [
-            {
-                title: 'El Poder de la Comunidad',
-                description: `
-                    La participación activa de la comunidad en el desarrollo fue
-                    fundamental para crear una plataforma que realmente satisface
-                    las necesidades de los artistas.
-                `
-            },
-            {
-                title: 'Innovación Tecnológica',
-                description: `
-                    La integración con multimedios como videojuegos
-                    demostró ser lo suficiente innovadora como para
-                    otorgar un incremento en la atención de usuario.
                 `
             }
         ]
