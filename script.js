@@ -1082,6 +1082,7 @@ const portfolioItems = [
     { type: 'image', src: 'img/cafe.webp', title: "D'wasi Café", category: 'Product Photography'},
     { type: 'image', src: 'img/cbd1.webp', title: 'Happy Plant', category: 'product photography' },
     { type: 'image', src: 'img/creep.webp', title: 'Creep', category: 'Photography' },
+    { type: 'image', src: 'img/lp2.png', title: 'Landing Page CasaGold', category: 'Web Design' },
     { type: 'image', src: 'img/foot.webp', title: 'Flowers', category: 'Photography' },
     { type: 'image', src: 'img/hd1.webp', title: 'Häagen-Dazs Ice Cream', category: 'Product Photography' },
     { type: 'image', src: 'img/hd2.webp', title: "Häagen-Dazs ad - Don't Hold Back", category: 'Advertising' },
@@ -1089,10 +1090,13 @@ const portfolioItems = [
     { type: 'image', src: 'img/hd4.webp', title: 'Häagen-Dazs Ice Cream', category: 'Product Photography' },
     { type: 'image', src: 'img/lp.webp', title: 'Landing Page RE/MAX', category: 'Web Design' },
     { type: 'image', src: 'img/mara1.webp', title: 'Mar 1', category: 'Photography' },
+    { type: 'image', src: 'img/lp1.png', title: 'Controla.Digital SaaS', category: 'Web Developement' },
     { type: 'image', src: 'img/mara2.webp', title: 'Mar 2', category: 'Photography' },
     { type: 'image', src: 'img/onnit.webp', title: 'Onnit Design', category: 'Advertising' },
     { type: 'image', src: 'img/pez.webp', title: 'Big fish', category: 'Digital Art' },
+    { type: 'image', src: 'img/lp4.png', title: 'Tienda de web apps', category: 'Web Developement' },
     { type: 'image', src: 'img/wing1.webp', title: 'Wingman ad', category: 'Advertising' },
+    { type: 'image', src: 'img/lp3.png', title: 'Landing Page Agente Inmobiliaria', category: 'Web Design' },
     { type: 'image', src: 'img/wing2.webp', title: 'Wingman ad', category: 'Product Photography' },
     { type: 'image', src: 'img/wise.webp', title: 'Gettin Old', category: 'Digital Art' }
 ];
