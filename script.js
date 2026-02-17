@@ -520,7 +520,7 @@ const projects = [
                     mostrando frecuencias, picos de volumen y patrones visuales que hacen
                     la experiencia más inmersiva.
                 `,
-                image: 'project9/p3.webp',
+                image: 'project9/p3.gif',
                 caption: 'Visualizer reaccionando al audio'
             },
             {
