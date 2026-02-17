@@ -1254,7 +1254,7 @@ document.getElementById('close-project')?.addEventListener('click', () => {
 
 // Load Portfolio Items
 let displayedItems = 0;
-const itemsPerLoad = 12;
+const itemsPerLoad = 36;
 let shuffledPortfolioItems = []; // Array mezclado que se mantiene constante
 
 function loadPortfolioItems(count = itemsPerLoad) {
