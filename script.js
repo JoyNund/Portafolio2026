@@ -1275,7 +1275,8 @@ function loadPortfolioItems(count = itemsPerLoad) {
         
         if (item.type === 'image') {
             // Determinar si es una imagen larga (landing page)
-            const isLandingPage = item.src.includes('lp.webp');
+            const isLandingPage = /lp-.*\.webp$/.test(item.src);
+
             
             itemDiv.innerHTML = `
                 <div class="relative group cursor-pointer overflow-hidden rounded-2xl">
