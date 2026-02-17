@@ -340,6 +340,127 @@ const projects = [
         ]
     },
     {
+        title: 'Controla PM (Project manager)',
+        description: 'Gestor de proyectos híbrido con IA integrada',
+        image: 'project5/cover.png',
+        categories: ['Desarrollo web', 'Project Management', 'IA'],
+        tagline: 'La evolución en gestión de proyectos: Kanban, Gantt, calendario e IA colaborativa en un solo lugar',
+        fullDescription: `
+            Sistema completo de gestión de proyectos que combina lo mejor de múltiples
+            metodologías: vista Kanban para flujo visual, diagramas de Gantt para
+            planificación temporal, calendario para deadlines y un asistente de IA
+            integrado en cada tarea. Incluye gestión de roles, chat colaborativo,
+            notas personales y fusión de tareas en supertareas.
+        `,
+        role: 'Desarrollador Full Stack & Arquitecto de Software',
+        client: 'Controla Digital',
+        duration: '8 meses',
+        year: '2025',
+        challenge: `
+            Los equipos de proyecto necesitaban una herramienta que unificara múltiples
+            vistas de trabajo (Kanban, Gantt, calendario) sin perder funcionalidades
+            clave como colaboración en tiempo real, seguimiento de deadlines y asistencia
+            inteligente. Las soluciones existentes fragmentaban estas capacidades en
+            diferentes herramientas.
+        `,
+        solution: `
+            Creamos Controla PM, un project manager híbrido que integra vistas múltiples
+            intercambiables, sistema de roles granular, chat de equipo, notas personales,
+            fusión de tareas y un agente de IA conversacional integrado en cada tarea
+            que asiste en la planificación, priorización y ejecución del trabajo.
+        `,
+        process: [
+            {
+                title: 'Diseño del Sistema Híbrido',
+                description: `
+                    Desarrollamos un esquema cuasi-Kanban que mantiene la flexibilidad
+                    del método tradicional mientras incorpora elementos de planificación
+                    temporal. Cada tarea puede visualizarse como tarjeta, entrada de
+                    calendario o barra en diagrama de Gantt según la vista seleccionada.
+                `,
+                image: 'project5/p1.png',
+                caption: 'Vista híbrida Kanban-Gantt'
+            },
+            {
+                title: 'Integración de IA',
+                description: `
+                    Implementamos un agente de chat con IA entrenado para asistir en
+                    gestión de proyectos. Cada tarea tiene su propio agente contextual
+                    que puede ayudar con estimaciones, desglose de subtareas, identificación
+                    de dependencias y recomendaciones de priorización.
+                `,
+                image: 'project5/p2.webp',
+                caption: 'Agente de IA asistiendo en una tarea'
+            },
+            {
+                title: 'Dashboard Inteligente',
+                description: `
+                    Diseñamos un dashboard central con tarjetas de tareas filtrables por
+                    prioridad, estado y responsable. Incluye segmentación por vistas
+                    temporal (diaria, semanal, mensual) y alertas proactivas de deadlines
+                    próximos.
+                `,
+                image: 'project5/p3.webp',
+                caption: 'Dashboard con filtros inteligentes'
+            },
+            {
+                title: 'Colaboración en Tiempo Real',
+                description: `
+                    Construimos un sistema de chat colaborativo integrado, comentarios
+                    en tareas, asignación de responsables con notificaciones push y
+                    una microapp de notas personales para cada usuario, permitiendo
+                    capturar ideas rápidas sin salir de la plataforma.
+                `,
+                image: 'project5/p4.webp',
+                caption: 'Chat de equipo y notas personales'
+            }
+        ],
+        results: [
+            {
+                metric: '40%',
+                description: 'Mejora en cumplimiento de deadlines'
+            },
+            {
+                metric: '3x',
+                description: 'Reducción en reuniones de seguimiento'
+            },
+            {
+                metric: '85%',
+                description: 'Adopción por equipos en el primer mes'
+            },
+            {
+                metric: '500+',
+                description: 'Tareas asistidas por IA diariamente'
+            }
+        ],
+        learnings: [
+            {
+                title: 'Flexibilidad es Clave',
+                description: `
+                    Permitir que los usuarios cambien entre vistas (Kanban/Gantt/Calendario)
+                    según su preferencia personal aumentó significativamente la satisfacción
+                    y productividad del equipo.
+                `
+            },
+            {
+                title: 'IA Contextual Funciona',
+                description: `
+                    El agente de IA integrado directamente en el contexto de cada tarea
+                    demostró ser más efectivo que los asistentes generales, ya que
+                    comprende el estado, dependencias y historial específico.
+                `
+            },
+            {
+                title: 'Micro-herramientas Internas',
+                description: `
+                    La inclusión de notas personales y chat integrado redujo la necesidad
+                    de herramientas externas, manteniendo a los equipos enfocados en
+                    una sola plataforma.
+                `
+            }
+        ]
+    },
+    {
         title: 'Radio Vesánico',
         description: 'Radio y portal web de rock de culto y dark wave con CMS propio',
         image: 'project9/cover.png',
