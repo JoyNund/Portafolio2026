@@ -370,58 +370,80 @@ const projects = [
         `,
         process: [
             {
-                title: 'Diseño de Identidad Visual',
+                title: 'Diseño Dark Wave',
                 description: `
-                    Creamos una estética oscura y atmosférica que refleja la esencia del
-                    dark wave y rock de culto. La interfaz usa paletas de colores profundos,
-                    tipografías góticas modernas y elementos visuales que evocan la
-                    clandestinidad y rebeldía del género.
+                    Desarrollamos una UI inmersiva con predominancia negra, acentos en rojo
+                    intenso y matices violetas que capturan la esencia del dark wave y rock
+                    de culto. La interfaz incorpora el visualizer como elemento central,
+                    creando una experiencia visual que reacciona a la música en tiempo real.
                 `,
                 image: 'project9/p1.png',
-                caption: 'Diseño de interfaz con estética dark wave'
+                caption: 'Interfaz dark wave con visualizer integrado'
             },
             {
-                title: 'CMS Personalizado',
+                title: 'CMS para Gestión de Contenido',
                 description: `
-                    Desarrollamos un panel de administración intuitivo que permite gestionar
-                    todo el contenido del portal: noticias de la escena, eventos próximos,
-                    programación de programas, podcasts y playlists. El CMS está optimizado
-                    para publicación rápida y programación automática.
+                    Construimos un panel de administración completo para gestionar noticias,
+                    eventos, podcasts y programación. El CMS permite publicar contenido
+                    dinámicamente sin intervención técnica, manteniendo el portal siempre
+                    actualizado con lo último de la escena alternativa.
                 `,
                 image: 'project9/p2.webp',
-                caption: 'Panel de administración del CMS'
+                caption: 'Panel CMS de administración'
             },
             {
-                title: 'Reproductor con Visualizer',
+                title: 'Visualizer con Web Audio API',
                 description: `
-                    Implementamos un reproductor de audio personalizado que integra un
-                    visualizer basado en Web Audio API. Las animaciones reaccionan en
-                    tiempo real a la frecuencia e intensidad de la música, creando una
-                    experiencia audiovisual inmersiva única.
+                    Implementamos un visualizer que analiza el espectro de audio en tiempo
+                    real usando Web Audio API. Las animaciones se intensifican con la música,
+                    mostrando frecuencias, picos de volumen y patrones visuales que hacen
+                    la experiencia más inmersiva.
                 `,
                 image: 'project9/p3.webp',
-                caption: 'Widget visualizer en acción'
+                caption: 'Visualizer reaccionando al audio'
             },
             {
-                title: 'Streaming 24/7',
+                title: 'Portal de Noticias y Eventos',
                 description: `
-                    Configuramos la infraestructura de streaming para transmisión continua
-                    con baja latencia. El sistema incluye automatización de programación,
-                    inserción de cuñas publicitarias y monitoreo en tiempo real de la
-                    calidad del audio.
+                    Creamos una sección editorial dedicada a noticias de la escena dark wave
+                    y rock de culto, además de un calendario de eventos donde los usuarios
+                    pueden descubrir conciertos, lanzamientos y actividades relacionadas.
                 `,
                 image: 'project9/p4.webp',
-                caption: 'Infraestructura de streaming'
+                caption: 'Portal de noticias y eventos'
             },
             {
-                title: 'Sección de Bandas Locales',
+                title: 'Parrilla de Programación',
                 description: `
-                    Creamos un directorio dedicado a bandas peruanas de rock de culto y
-                    dark wave. Cada perfil incluye biografía, discografía, enlaces a redes
-                    sociales y reproductor integrado para que los artistas suban sus temas.
+                    Diseñamos un calendario interactivo que muestra la programación semanal
+                    de la radio. Los usuarios pueden ver qué programas están al aire,
+                    explorar la parrilla por días y configurar recordatorios para sus
+                    programas favoritos.
                 `,
                 image: 'project9/p5.webp',
-                caption: 'Directorio de bandas locales'
+                caption: 'Calendario con programación semanal'
+            },
+            {
+                title: 'Panel de Comentarios Interactivo',
+                description: `
+                    Integramos un sistema de comentarios en tiempo real que permite a los
+                    oyentes interactuar durante las transmisiones, solicitar canciones y
+                    participar en la comunidad. El panel se sincroniza con el reproductor
+                    para mostrar comentarios contextualizados a cada tema.
+                `,
+                image: 'project9/p6.webp',
+                caption: 'Panel de comentarios en vivo'
+            },
+            {
+                title: 'Widget de Letras LRCLIB',
+                description: `
+                    Incorporamos integración con LRCLIB para mostrar letras sincronizadas
+                    de las canciones en reproducción. El widget muestra la letra en tiempo
+                    real, resaltando el verso actual y permitiendo a los usuarios seguir
+                    la música mientras leen.
+                `,
+                image: 'project9/p7.webp',
+                caption: 'Widget de letras sincronizadas'
             }
         ],
         results: [
