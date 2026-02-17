@@ -1088,6 +1088,10 @@ const portfolioItems = [
     { type: 'image', src: 'img/hd3.webp', title: "Häagen-Dazs ad - Don't Hold Back", category: 'Advertising' },
     { type: 'image', src: 'img/hd4.webp', title: 'Häagen-Dazs Ice Cream', category: 'Product Photography' },
     { type: 'image', src: 'img/lp.webp', title: 'Landing Page RE/MAX', category: 'Web Design' },
+    { type: 'image', src: 'img/lp1.webp', title: 'Landing Contorla SaaS', category: 'Web Design' },
+    { type: 'image', src: 'img/lp2.webp', title: 'Landing Page CasaGold', category: 'Web Design' },
+    { type: 'image', src: 'img/lp3.webp', title: 'Landing Page Gianella Aponte', category: 'Web Design' },
+    { type: 'image', src: 'img/lp4.webp', title: 'Tienda de Aplicaciones Web', category: 'Web Developement' },
     { type: 'image', src: 'img/mara1.webp', title: 'Mar 1', category: 'Photography' },
     { type: 'image', src: 'img/mara2.webp', title: 'Mar 2', category: 'Photography' },
     { type: 'image', src: 'img/onnit.webp', title: 'Onnit Design', category: 'Advertising' },
@@ -1271,7 +1275,7 @@ function loadPortfolioItems(count = itemsPerLoad) {
         
         if (item.type === 'image') {
             // Determinar si es una imagen larga (landing page)
-            const isLandingPage = item.src.includes('lp.webp');
+            const isLandingPage = /\/lp\d*\.webp/.test(item.src);
             
             itemDiv.innerHTML = `
                 <div class="relative group cursor-pointer overflow-hidden rounded-2xl">
