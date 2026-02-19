@@ -897,8 +897,8 @@ button, a {
     object-fit: cover;
 }
 
-/* Imágenes largas (landing pages) en miniaturas */
-.masonry-item img[src*="lp.webp"] {
+/* Imágenes largas (landing pages) en miniaturas - incluye lp.webp, lp1.webp, lp2.webp, etc. */
+.masonry-item img[src*="lp"][src*=".webp"] {
     height: 400px;
     object-fit: cover;
     object-position: top;
