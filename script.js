@@ -1122,17 +1122,17 @@ function shuffle(array) {
 function loadProjects() {
     const grid = document.querySelector('#proyectos .grid');
     if (!grid) return;
-    
+
     projects.forEach((project, index) => {
         const card = document.createElement('div');
         card.className = 'project-card rounded-2xl overflow-hidden group cursor-pointer';
         card.style.animationDelay = `${index * 0.1}s`;
-        
+
         card.innerHTML = `
             <div class="relative h-64 overflow-hidden">
-                <img src="${project.image}" alt="${project.title}" 
+                <img src="${project.image}" alt="${project.title}"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                     onerror="this.src='https://via.placeholder.com/400x300?text=${encodeURIComponent(project.title)}'">
+                     onerror="if(this.src!=='placeholder.webp'){this.src='placeholder.webp';}else{this.style.display='none';}">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
                     <div class="flex flex-wrap gap-2 mb-3">
@@ -1279,9 +1279,9 @@ function loadPortfolioItems(count = itemsPerLoad) {
 
             itemDiv.innerHTML = `
                 <div class="relative group cursor-pointer overflow-hidden rounded-2xl">
-                    <img src="${item.src}" alt="${item.title}" 
+                    <img src="${item.src}" alt="${item.title}" loading="lazy" decoding="async"
                          class="w-full ${isLandingPage ? 'h-96 object-cover object-top' : 'h-auto'} transition-transform duration-500 group-hover:scale-105 media-item"
-                         onerror="this.src='https://via.placeholder.com/400x600?text=${encodeURIComponent(item.title)}'">
+                         onerror="if(this.src!=='placeholder.webp'){this.src='placeholder.webp';}else{this.style.display='none';}">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <span class="category-tag mb-2">
@@ -1292,12 +1292,12 @@ function loadPortfolioItems(count = itemsPerLoad) {
                     </div>
                 </div>
             `;
-            
+
             itemDiv.addEventListener('click', () => openLightbox(item));
         } else if (item.type === 'video') {
             itemDiv.innerHTML = `
                 <div class="relative group cursor-pointer overflow-hidden rounded-2xl">
-                    <video class="w-full h-auto media-item" muted loop playsinline autoplay>
+                    <video class="w-full h-auto media-item" muted loop playsinline autoplay preload="none" poster="">
                         <source src="${item.src}" type="video/webm">
                     </video>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1315,15 +1315,21 @@ function loadPortfolioItems(count = itemsPerLoad) {
                     </div>
                 </div>
             `;
-            
+
             // El video se reproduce automáticamente con autoplay
             const video = itemDiv.querySelector('video');
-            
+
+            // Manejar errores de video - si no existe, ocultar el elemento
+            video.addEventListener('error', () => {
+                itemDiv.style.display = 'none';
+                console.log(`Video no encontrado: ${item.src}`);
+            });
+
             // Asegurar que el video se reproduzca en loop
             video.addEventListener('loadeddata', () => {
                 video.play().catch(err => console.log('Autoplay prevented:', err));
             });
-            
+
             itemDiv.addEventListener('click', () => openLightbox(item));
         }
         
