@@ -400,7 +400,7 @@ const projects = [
                     temporal (diaria, semanal, mensual) y alertas proactivas de deadlines
                     próximos.
                 `,
-                image: 'project5/p3.webp',
+                image: 'project5/p3.gif',
                 caption: 'Dashboard con filtros inteligentes'
             },
             {
