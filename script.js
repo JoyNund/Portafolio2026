@@ -1274,9 +1274,9 @@ function loadPortfolioItems(count = itemsPerLoad) {
         itemDiv.style.animationDelay = `${index * 0.05}s`;
         
         if (item.type === 'image') {
-            // Determinar si es una imagen larga (landing page)
-            const isLandingPage = item.isLandingPage || false;
-            
+            // Determinar si es una imagen larga (landing page) - incluye lp.webp, lp1.webp, lp2.webp, etc.
+            const isLandingPage = item.isLandingPage || (item.src && /lp\d*\.webp$/.test(item.src));
+
             itemDiv.innerHTML = `
                 <div class="relative group cursor-pointer overflow-hidden rounded-2xl">
                     <img src="${item.src}" alt="${item.title}" 
@@ -1364,8 +1364,8 @@ function openLightbox(item) {
         v.pause();
     });
     
-    // Determinar si es una imagen larga
-    const isTallImage = item.src && item.src.includes('lp.webp');
+    // Determinar si es una imagen larga (landing page) - incluye lp.webp, lp1.webp, lp2.webp, etc.
+    const isTallImage = item.src && /lp\d*\.webp$/.test(item.src);
     
     if (item.type === 'image') {
         content.innerHTML = `
