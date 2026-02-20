@@ -114,7 +114,7 @@ const projects = [
         `,
         role: 'Arquitecto de Automatizaciones & Desarrollador Full Stack',
         client: 'Controla Digital',
-        duration: '7 meses',
+        duration: '3 meses',
         year: '2025',
         challenge: `
             Las empresas perdían leads valiosos por procesos manuales de captación y
@@ -123,7 +123,7 @@ const projects = [
             de la iniciativa humana, resultando en oportunidades perdidas y baja conversión.
         `,
         solution: `
-            Creamos un flujo automatizado end-to-end: los CTAs de campañas dirigen a
+            Creé un flujo automatizado end-to-end: los CTAs de campañas dirigen a
             formularios (integrados en plataformas de ads o landing pages), la data se
             respalda automáticamente en Google Sheets, y mediante Google Apps Script se
             sincroniza en tiempo real con Controla CRM, donde cada lead es asignado a un
@@ -133,7 +133,7 @@ const projects = [
             {
                 title: 'Campañas y Formularios',
                 description: `
-                    Configuramos campañas en Google Ads, Facebook Ads y LinkedIn con CTAs
+                    Configuré campañas en Google Ads, Facebook Ads y LinkedIn con CTAs
                     optimizados que dirigen a formularios de captación. Estos pueden estar
                     integrados nativamente en las plataformas de ads o alojados en landing
                     pages personalizadas con tracking de conversiones.
@@ -144,7 +144,7 @@ const projects = [
             {
                 title: 'Backup en Google Sheets',
                 description: `
-                    Implementamos un sistema de respaldo automático donde cada lead
+                    Implementé un sistema de respaldo automático donde cada lead
                     capturado se guarda instantáneamente en una hoja de cálculo de Google,
                     proporcionando un backup accesible y permitiendo análisis ad-hoc
                     sin depender del CRM.
@@ -155,7 +155,7 @@ const projects = [
             {
                 title: 'Integración con Apps Script',
                 description: `
-                    Desarrollamos scripts personalizados que monitorean cambios en la
+                    Desarrollé scripts personalizados que monitorean cambios en la
                     hoja de cálculo y sincronizan automáticamente los nuevos leads con
                     Controla CRM, mapeando campos, normalizando datos y asignando
                     etiquetas según la fuente de origen.
@@ -188,19 +188,19 @@ const projects = [
         ],
         results: [
             {
-                metric: '90%',
+                metric: '70%',
                 description: 'Reducción en tiempo de primer contacto'
             },
             {
-                metric: '3x',
+                metric: '2x',
                 description: 'Incremento en tasa de conversión'
             },
             {
-                metric: '100%',
+                metric: '98%',
                 description: 'Leads registrados sin pérdida de data'
             },
             {
-                metric: '70%',
+                metric: '55%',
                 description: 'Reducción en trabajo manual de seguimiento'
             }
         ],
@@ -245,7 +245,7 @@ const projects = [
         `,
         role: 'Desarrollador Full Stack & Ingeniero de IA',
         client: 'Controla Digital',
-        duration: '6 meses',
+        duration: '3 meses',
         year: '2025',
         challenge: `
             Las empresas necesitaban automatizar la atención al cliente y el proceso de ventas
@@ -254,7 +254,7 @@ const projects = [
             y escalar a humanos cuando fuera necesario.
         `,
         solution: `
-            Desarrollamos Controla Agentes, una plataforma que permite crear agentes de IA
+            Desarrollé Controla Agentes, una plataforma que permite crear agentes de IA
             configurables con modelos de lenguaje a elección, personalizar su personalidad
             y reglas de negocio, vincularlos a sesiones de WhatsApp reales mediante escaneo
             QR, y monitorear todas las conversaciones con un sistema de etiquetado para
@@ -264,7 +264,7 @@ const projects = [
             {
                 title: 'Configuración del Agente',
                 description: `
-                    Diseñamos una interfaz intuitiva donde los usuarios pueden seleccionar
+                    Diseñé una interfaz intuitiva donde los usuarios pueden seleccionar
                     el modelo de IA, definir instrucciones personalizadas, establecer la
                     personalidad del agente (tono, estilo, formalidad) y configurar reglas
                     de negocio específicas como horarios de atención y escalado a humanos.
@@ -275,7 +275,7 @@ const projects = [
             {
                 title: 'Vinculación con WhatsApp',
                 description: `
-                    Implementamos un sistema de vinculación mediante QR code que conecta
+                    Implementé un sistema de vinculación mediante QR code que conecta
                     el agente con una sesión real de WhatsApp Web, permitiendo que el agente
                     opere desde un número existente sin necesidad de APIs costosas de
                     WhatsApp Business.
@@ -286,7 +286,7 @@ const projects = [
             {
                 title: 'Monitoreo y Etiquetado',
                 description: `
-                    Creamos un dashboard de monitoreo donde se pueden revisar todas las
+                    Creé un dashboard de monitoreo donde se pueden revisar todas las
                     conversaciones del agente, agregar etiquetas personalizadas (ej: "lead
                     caliente", "requiere seguimiento", "venta cerrada") y filtrar por estado,
                     fecha o tipo de interacción para análisis y reporting.
@@ -297,7 +297,7 @@ const projects = [
         ],
         results: [
             {
-                metric: '80%',
+                metric: '65%',
                 description: 'Reducción en tiempo de respuesta'
             },
             {
@@ -305,11 +305,11 @@ const projects = [
                 description: 'Disponibilidad del agente'
             },
             {
-                metric: '35%',
+                metric: '25%',
                 description: 'Incremento en tasa de cierre de ventas'
             },
             {
-                metric: '1000+',
+                metric: '750+',
                 description: 'Conversaciones manejadas por agente/mes'
             }
         ],
@@ -354,7 +354,7 @@ const projects = [
         `,
         role: 'Desarrollador Full Stack & Arquitecto de Software',
         client: 'Controla Digital',
-        duration: '8 meses',
+        duration: '3 meses',
         year: '2025',
         challenge: `
             Los equipos de proyecto necesitaban una herramienta que unificara múltiples
@@ -364,7 +364,7 @@ const projects = [
             diferentes herramientas.
         `,
         solution: `
-            Creamos Controla PM, un project manager híbrido que integra vistas múltiples
+            Creé Controla PM, un project manager híbrido que integra vistas múltiples
             intercambiables, sistema de roles granular, chat de equipo, notas personales,
             fusión de tareas y un agente de IA conversacional integrado en cada tarea
             que asiste en la planificación, priorización y ejecución del trabajo.
@@ -373,7 +373,7 @@ const projects = [
             {
                 title: 'Diseño del Sistema Híbrido',
                 description: `
-                    Desarrollamos un esquema cuasi-Kanban que mantiene la flexibilidad
+                    Desarrollé un esquema cuasi-Kanban que mantiene la flexibilidad
                     del método tradicional mientras incorpora elementos de planificación
                     temporal. Cada tarea puede visualizarse como tarjeta, entrada de
                     calendario o barra en diagrama de Gantt según la vista seleccionada.
@@ -384,7 +384,7 @@ const projects = [
             {
                 title: 'Integración de IA',
                 description: `
-                    Implementamos un agente de chat con IA entrenado para asistir en
+                    Implementé un agente de chat con IA entrenado para asistir en
                     gestión de proyectos. Cada tarea tiene su propio agente contextual
                     que puede ayudar con estimaciones, desglose de subtareas, identificación
                     de dependencias y recomendaciones de priorización.
@@ -395,7 +395,7 @@ const projects = [
             {
                 title: 'Dashboard Inteligente',
                 description: `
-                    Diseñamos un dashboard central con tarjetas de tareas filtrables por
+                    Diseñé un dashboard central con tarjetas de tareas filtrables por
                     prioridad, estado y responsable. Incluye segmentación por vistas
                     temporal (diaria, semanal, mensual) y alertas proactivas de deadlines
                     próximos.
@@ -406,7 +406,7 @@ const projects = [
             {
                 title: 'Colaboración en Tiempo Real',
                 description: `
-                    Construimos un sistema de chat colaborativo integrado, comentarios
+                    Construí un sistema de chat colaborativo integrado, comentarios
                     en tareas, asignación de responsables con notificaciones push y
                     una microapp de notas personales para cada usuario, permitiendo
                     capturar ideas rápidas sin salir de la plataforma.
@@ -417,19 +417,19 @@ const projects = [
         ],
         results: [
             {
-                metric: '40%',
+                metric: '30%',
                 description: 'Mejora en cumplimiento de deadlines'
             },
             {
-                metric: '3x',
+                metric: '2x',
                 description: 'Reducción en reuniones de seguimiento'
             },
             {
-                metric: '85%',
+                metric: '75%',
                 description: 'Adopción por equipos en el primer mes'
             },
             {
-                metric: '500+',
+                metric: '400+',
                 description: 'Tareas asistidas por IA diariamente'
             }
         ],
@@ -475,7 +475,7 @@ const projects = [
         `,
         role: 'Desarrollador Full Stack & Diseñador de Producto',
         client: 'Radio Vesánico',
-        duration: '10 meses',
+        duration: '3 meses',
         year: '2024',
         challenge: `
             La escena de rock de culto y dark wave en Perú carecía de un espacio digital
@@ -484,7 +484,7 @@ const projects = [
             que capturara la esencia oscura y alternativa del género.
         `,
         solution: `
-            Desarrollamos Radio Vesánico como una web app completa con diseño inmersivo
+            Desarrollé Radio Vesánico como una web app completa con diseño inmersivo
             y atmosférico. Incluye un CMS personalizado para autogestión de contenido,
             streaming de audio 24/7, reproductor con visualizer en tiempo real, y secciones
             dedicadas a noticias, eventos, programación y podcasts de la escena alternativa.
@@ -493,7 +493,7 @@ const projects = [
             {
                 title: 'Diseño Dark Wave',
                 description: `
-                    Desarrollamos una UI inmersiva con predominancia negra, acentos en rojo
+                    Desarrollé una UI inmersiva con predominancia negra, acentos en rojo
                     intenso y matices violetas que capturan la esencia del dark wave y rock
                     de culto. La interfaz incorpora el visualizer como elemento central,
                     creando una experiencia visual que reacciona a la música en tiempo real.
@@ -504,7 +504,7 @@ const projects = [
             {
                 title: 'CMS para Gestión de Contenido',
                 description: `
-                    Construimos un panel de administración completo para gestionar noticias,
+                    Construí un panel de administración completo para gestionar noticias,
                     eventos, podcasts y programación. El CMS permite publicar contenido
                     dinámicamente sin intervención técnica, manteniendo el portal siempre
                     actualizado con lo último de la escena alternativa.
@@ -515,7 +515,7 @@ const projects = [
             {
                 title: 'Visualizer con Web Audio API',
                 description: `
-                    Implementamos un visualizer que analiza el espectro de audio en tiempo
+                    Implementé un visualizer que analiza el espectro de audio en tiempo
                     real usando Web Audio API. Las animaciones se intensifican con la música,
                     mostrando frecuencias, picos de volumen y patrones visuales que hacen
                     la experiencia más inmersiva.
@@ -526,7 +526,7 @@ const projects = [
             {
                 title: 'Portal de Noticias y Eventos',
                 description: `
-                    Creamos una sección editorial dedicada a noticias de la escena dark wave
+                    Creé una sección editorial dedicada a noticias de la escena dark wave
                     y rock de culto, además de un calendario de eventos donde los usuarios
                     pueden descubrir conciertos, lanzamientos y actividades relacionadas.
                 `,
@@ -536,7 +536,7 @@ const projects = [
             {
                 title: 'Parrilla de Programación',
                 description: `
-                    Diseñamos un calendario interactivo que muestra la programación semanal
+                    Diseñé un calendario interactivo que muestra la programación semanal
                     de la radio. Los usuarios pueden ver qué programas están al aire,
                     explorar la parrilla por días y configurar recordatorios para sus
                     programas favoritos.
@@ -547,7 +547,7 @@ const projects = [
             {
                 title: 'Panel de Comentarios Interactivo',
                 description: `
-                    Integramos un sistema de comentarios en tiempo real que permite a los
+                    Integré un sistema de comentarios en tiempo real que permite a los
                     oyentes interactuar durante las transmisiones, solicitar canciones y
                     participar en la comunidad. El panel se sincroniza con el reproductor
                     para mostrar comentarios contextualizados a cada tema.
@@ -558,7 +558,7 @@ const projects = [
             {
                 title: 'Widget de Letras LRCLIB',
                 description: `
-                    Incorporamos integración con LRCLIB para mostrar letras sincronizadas
+                    Incorporé integración con LRCLIB para mostrar letras sincronizadas
                     de las canciones en reproducción. El widget muestra la letra en tiempo
                     real, resaltando el verso actual y permitiendo a los usuarios seguir
                     la música mientras leen.
@@ -569,11 +569,11 @@ const projects = [
         ],
         results: [
             {
-                metric: '50+',
+                metric: '40+',
                 description: 'Bandas locales promovidas'
             },
             {
-                metric: '10K+',
+                metric: '7K+',
                 description: 'Oyentes mensuales'
             },
             {
@@ -581,7 +581,7 @@ const projects = [
                 description: 'Transmisión continua'
             },
             {
-                metric: '200+',
+                metric: '150+',
                 description: 'Noticias y eventos publicados'
             }
         ],
@@ -626,7 +626,7 @@ const projects = [
         `,
         role: 'Desarrollador Full Stack & Diseñador de Producto',
         client: 'Controla Digital',
-        duration: '5 meses',
+        duration: '3 meses',
         year: '2025',
         challenge: `
             Las empresas necesitaban una forma sencilla de distribuir y gestionar sus web apps
@@ -635,7 +635,7 @@ const projects = [
             intuitiva y segura.
         `,
         solution: `
-            Desarrollamos App-Center, un hub centralizado que combina tienda de aplicaciones
+            Desarrollé App-Center, un hub centralizado que combina tienda de aplicaciones
             con launcher integrado. Los usuarios pueden navegar el catálogo sin registrarse,
             pero al adquirir una app e iniciar sesión, obtienen acceso inmediato desde la
             sección "Mis Apps" o directamente desde las tarjetas del catálogo.
@@ -644,7 +644,7 @@ const projects = [
             {
                 title: 'Investigación y Arquitectura',
                 description: `
-                    Analizamos los flujos de usuarios y definimos una arquitectura que separa
+                    Analicé los flujos de usuarios y definí una arquitectura que separa
                     claramente el modo exploración (sin login) del modo usuario (con apps
                     adquiridas), optimizando la experiencia de descubrimiento y acceso.
                 `,
@@ -654,7 +654,7 @@ const projects = [
             {
                 title: 'Diseño de Interfaz',
                 description: `
-                    Creamos una interfaz limpia que prioriza el descubrimiento visual de
+                    Creé una interfaz limpia que prioriza el descubrimiento visual de
                     aplicaciones, con tarjetas informativas, categorías claras y un sistema
                     de estados que indica claramente qué apps están disponibles, adquiridas
                     o en uso.
@@ -665,7 +665,7 @@ const projects = [
             {
                 title: 'Desarrollo e Integración',
                 description: `
-                    Implementamos un sistema de autenticación seguro con gestión de licencias,
+                    Implementé un sistema de autenticación seguro con gestión de licencias,
                     launcher integrado que abre las apps en ventanas embebidas o pestañas
                     nuevas, y sincronización en tiempo real del estado de cada aplicación.
                 `,
@@ -675,7 +675,7 @@ const projects = [
         ],
         results: [
             {
-                metric: '25+',
+                metric: '20+',
                 description: 'Web apps disponibles en el catálogo'
             },
             {
@@ -683,7 +683,7 @@ const projects = [
                 description: 'Uptime del launcher'
             },
             {
-                metric: '60%',
+                metric: '45%',
                 description: 'Reducción en tiempo de acceso a apps'
             }
         ],
@@ -718,7 +718,7 @@ const projects = [
         `,
         role: 'Desarrollador Full Stack & Diseñador UX',
         client: 'RE/MAX Focus',
-        duration: '4 meses',
+        duration: '3 meses',
         year: '2024',
         challenge: `
             RE/MAX necesitaba modernizar su programa de capacitación para agentes inmobiliarios,
@@ -726,7 +726,7 @@ const projects = [
             la formación sin perder calidad educativa.
         `,
         solution: `
-            Creamos una plataforma e-learning robusta con contenido multimedia interactivo,
+            Creé una plataforma e-learning robusta con contenido multimedia interactivo,
             sistema de evaluaciones automatizado, seguimiento de progreso en tiempo real
             y certificaciones digitales verificables.
         `,
@@ -734,7 +734,7 @@ const projects = [
             {
                 title: 'Análisis y Arquitectura',
                 description: `
-                    Realizamos un análisis exhaustivo de las necesidades educativas y definimos
+                    Realicé un análisis exhaustivo de las necesidades educativas y definí
                     la arquitectura de la plataforma, priorizando la escalabilidad y la experiencia
                     de usuario tanto para estudiantes como administradores.
                 `,
@@ -744,7 +744,7 @@ const projects = [
             {
                 title: 'Diseño de Interfaz',
                 description: `
-                    Desarrollamos una interfaz intuitiva que facilita la navegación entre cursos,
+                    Desarrollé una interfaz intuitiva que facilita la navegación entre cursos,
                     con un dashboard personalizado que muestra el progreso del estudiante y
                     recomendaciones de contenido.
                 `,
@@ -754,7 +754,7 @@ const projects = [
             {
                 title: 'Desarrollo e Integración',
                 description: `
-                    Implementamos la plataforma utilizando tecnologías modernas, integrando
+                    Implementé la plataforma utilizando tecnologías modernas, integrando
                     sistemas de video conferencia, evaluaciones interactivas y un sistema
                     de certificaciones automatizado.
                 `,
@@ -764,15 +764,15 @@ const projects = [
         ],
         results: [
             {
-                metric: '200+',
+                metric: '150+',
                 description: 'Agentes capacitados en el primer mes'
             },
             {
-                metric: '95%',
+                metric: '90%',
                 description: 'Tasa de finalización de cursos'
             },
             {
-                metric: '40%',
+                metric: '30%',
                 description: 'Reducción en costos de capacitación'
             }
         ],
@@ -808,7 +808,7 @@ const projects = [
         `,
         role: 'Arquitecto de Software & Desarrollador Full Stack',
         client: 'Controla Digital',
-        duration: '9 meses',
+        duration: '3 meses',
         year: '2025',
         challenge: `
             Las empresas manejaban data dispersa en múltiples sistemas: leads de campañas
@@ -817,7 +817,7 @@ const projects = [
             Necesitaban una vista unificada sin perder la capacidad de segmentar por fuente.
         `,
         solution: `
-            Diseñamos Controla CRM con una arquitectura modular de "pantallas por fuente".
+            Diseñé Controla CRM con una arquitectura modular de "pantallas por fuente".
             Por defecto incluye datos de campañas de ads, pero permite agregar nuevas
             fuentes (SUNAT, proveedores del Estado, APIs personalizadas) que se organizan
             en pantallas independientes. El seguimiento de oportunidades usa un modelo
@@ -827,7 +827,7 @@ const projects = [
             {
                 title: 'Arquitectura Modular',
                 description: `
-                    Desarrollamos una arquitectura basada en plugins donde cada fuente
+                    Desarrollé una arquitectura basada en plugins donde cada fuente
                     de datos es un módulo independiente con su propia pantalla, campos
                     personalizados y reglas de mapeo. Esto permite agregar nuevas fuentes
                     sin modificar el núcleo del sistema.
@@ -838,7 +838,7 @@ const projects = [
             {
                 title: 'Integración con SUNAT',
                 description: `
-                    Implementamos conectores con la API de SUNAT para consultar y importar
+                    Implementé conectores con la API de SUNAT para consultar y importar
                     datos de empresas registradas (RUC, razón social, estado, actividad
                     económica), permitiendo enriquecer leads y validar prospectos
                     automáticamente.
@@ -849,7 +849,7 @@ const projects = [
             {
                 title: 'Proveedores del Estado',
                 description: `
-                    Integramos conexión con el portal de proveedores del Estado (SEACE),
+                    Integré conexión con el portal de proveedores del Estado (SEACE),
                     permitiendo importar registros de proveedores activos, verificar
                     habilitaciones y monitorear licitaciones relevantes para el negocio.
                 `,
@@ -859,7 +859,7 @@ const projects = [
             {
                 title: 'Tableros Kanban',
                 description: `
-                    Diseñamos un sistema Kanban flexible donde cada fuente de datos puede
+                    Diseñé un sistema Kanban flexible donde cada fuente de datos puede
                     tener su propio pipeline de seguimiento con columnas personalizables
                     (ej: "Nuevo", "Contactado", "Propuesta", "Negociación", "Cerrado").
                     Las oportunidades se mueven mediante drag-and-drop.
@@ -870,7 +870,7 @@ const projects = [
             {
                 title: 'Vista Unificada de Contacto',
                 description: `
-                    Creamos un perfil unificado de contacto/empresa que consolida toda
+                    Creé un perfil unificado de contacto/empresa que consolida toda
                     la información de las distintas fuentes: datos de SUNAT, interacciones
                     de campañas, notas del CRM, historial de comunicaciones y oportunidades
                     asociadas en una sola vista 360°.
@@ -881,19 +881,19 @@ const projects = [
         ],
         results: [
             {
-                metric: '5+',
+                metric: '4+',
                 description: 'Fuentes de datos integradas'
             },
             {
-                metric: '50%',
+                metric: '40%',
                 description: 'Reducción en tiempo de investigación de leads'
             },
             {
-                metric: '80%',
+                metric: '65%',
                 description: 'Mejora en calidad de data de prospectos'
             },
             {
-                metric: '25+',
+                metric: '20+',
                 description: 'Empresas usando el CRM'
             }
         ],
@@ -935,23 +935,23 @@ const projects = [
         `,
         role: 'Director Creativo & Desarrollador',
         client: 'Raw Productora',
-        duration: '8 meses',
+        duration: '3 meses',
         year: '2020',
         challenge: `
             Se necesitaba lograr captar la atención del público local en un time-span relativa corto debido
             a las condiciones del contexto de la emergencia sanitaria
         `,
         solution: `
-            Se desarrolló una estrategia multiplataforma en simultaneo con lanzamientos a lo largo de un mes,
-            esto incluyo: Campaña de expectativa en Redes Sociales y Youtube, desarrollo de página web, 
+            Desarrollé una estrategia multiplataforma en simultaneo con lanzamientos a lo largo de un mes,
+            esto incluyó: Campaña de expectativa en Redes Sociales y Youtube, desarrollo de página web,
             playlist de artistas protagonistas de la serie en spotify, un MOD para el juego web clone hero.
         `,
         process: [
             {
                 title: 'Diseño de Plataforma',
                 description: `
-                    Desarrollamos una arquitectura web que facilita la
-                    navegación y descubrimiento de artistas, mientras mantenemos un
+                    Desarrollé una arquitectura web que facilita la
+                    navegación y descubrimiento de artistas, mientras mantengo un
                     enfoque en la experiencia de usuario con servicios conectados.
                 `,
                 image: 'project3/p1.webp',
@@ -960,11 +960,11 @@ const projects = [
         ],
         results: [
             {
-                metric: '30+',
+                metric: '25+',
                 description: 'Artistas impulsados en la plataforma'
             },
             {
-                metric: '17K+',
+                metric: '12K+',
                 description: 'Views'
             }
         ],
@@ -988,19 +988,19 @@ const projects = [
         ]
     },
     {
-        title: 'Pawtrulla App móvil',
+        title: 'PatLad App móvil',
         description: 'App para contratar paseos para perros en la ciudad de Trujillo',
         image: 'img/app1.webp',
         categories: ['Apps', 'UI/UX', 'Startup'],
         tagline: 'Conectando dueños de mascotas con paseadores profesionales de manera segura y eficiente',
         fullDescription: `
-            Desarrollo de una aplicación móvil que conecta dueños de mascotas con paseadores 
-            profesionales. La app incluye sistema de reservas, seguimiento en tiempo real, 
+            Desarrollo de una aplicación móvil que conecta dueños de mascotas con paseadores
+            profesionales. La app incluye sistema de reservas, seguimiento en tiempo real,
             pagos integrados y sistema de calificaciones.
         `,
         role: 'Diseñador UI/UX & Desarrollador Frontend',
-        client: 'Pawtrulla',
-        duration: '6 meses',
+        client: 'PatLad',
+        duration: '3 meses',
         year: '2023',
         challenge: `
             El mercado de paseo de perros en Trujillo carecía de una solución tecnológica
@@ -1008,7 +1008,7 @@ const projects = [
             forma de encontrar y evaluar paseadores confiables.
         `,
         solution: `
-            Creamos una aplicación que implementa verificación de paseadores, seguimiento
+            Creé una aplicación que implementa verificación de paseadores, seguimiento
             en tiempo real de los paseos, sistema de pagos seguros y calificaciones
             verificadas. La app se diseñó priorizando la confianza y la experiencia de usuario.
         `,
@@ -1016,7 +1016,7 @@ const projects = [
             {
                 title: 'Research & UX',
                 description: `
-                    Realizamos una investigación exhaustiva del mercado local de paseo de perros,
+                    Realicé una investigación exhaustiva del mercado local de paseo de perros,
                     entrevistando a dueños de mascotas y paseadores para entender sus necesidades
                     y puntos de dolor específicos.
                 `,
@@ -1026,8 +1026,8 @@ const projects = [
             {
                 title: 'Diseño UI',
                 description: `
-                    Desarrollamos un sistema de diseño completo y prototipado en Figma,
-                    enfocándonos en crear una interfaz intuitiva que transmitiera confianza
+                    Desarrollé un sistema de diseño completo y prototipado en Figma,
+                    enfocándome en crear una interfaz intuitiva que transmitiera confianza
                     y profesionalismo.
                 `,
                 image: 'img/app.webp',
@@ -1036,7 +1036,7 @@ const projects = [
         ],
         results: [
             {
-                metric: '500+',
+                metric: '400+',
                 description: 'Usuarios activos en el primer trimestre'
             },
             {
@@ -1044,7 +1044,7 @@ const projects = [
                 description: 'Calificación promedio en la Playstore'
             },
             {
-                metric: '3,000+',
+                metric: '2,200+',
                 description: 'Paseos completados exitosamente'
             }
         ],
@@ -1059,14 +1059,13 @@ const projects = [
             {
                 title: 'Iteración Continua',
                 description: `
-                    El feedback constante de los usuarios nos permitió mejorar la aplicación
+                    El feedback constante de los usuarios me permitió mejorar la aplicación
                     de manera significativa durante las primeras semanas de lanzamiento.
                 `
             }
         ]
     }
 ];
-
 // Portfolio Items Data
 const portfolioItems = [
     // Videos (areel.webm siempre será el primero)
