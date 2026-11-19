@@ -1143,7 +1143,7 @@ function loadProjects(filter = 'all') {
 
         card.innerHTML = `
             <div class="relative h-64 overflow-hidden">
-                <img src="${project.image}" alt="${project.title}"
+                <img src="${project.image}${project.caseUrl ? '?v=20261119-demo' : ''}" alt="${project.title}"
                      loading="lazy" width="1440" height="1000" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                      onerror="if(this.src!=='placeholder.webp'){this.src='placeholder.webp';}else{this.style.display='none';}">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
