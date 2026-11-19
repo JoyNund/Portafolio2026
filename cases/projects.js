@@ -366,26 +366,26 @@ window.CASE_STUDIES = [
     ],
     "related": [
       "intiwasi-web",
-      "intiwasi-visual-studio"
+      "controla-studio"
     ]
   },
   {
-    "slug": "intiwasi-visual-studio",
-    "title": "Intiwasi Studio",
-    "client": "Intiwasi Spanish Immersion School",
-    "description": "Editor visual a medida: lienzo, capas, diseño responsive, borradores, historial y publicación.",
-    "tagline": "Un editor propio para que el equipo dé forma a su web.",
-    "image": "/cases/images/intiwasi-editor.webp",
+    "slug": "controla-studio",
+    "title": "Controla Studio",
+    "client": "Controla Digital",
+    "description": "Editor visual CMS para sitios con diseño propio: lienzo, capas, ajustes responsive, borradores, historial y publicación. Implementación mostrada: Intiwasi.",
+    "tagline": "Un editor visual CMS para gestionar sitios con diseño propio.",
+    "image": "/cases/images/controla-studio-desktop.webp",
     "categories": [
       "Webs y CMS",
       "Producto",
       "UI/UX"
     ],
-    "type": "Editor visual a medida",
+    "type": "Editor visual CMS",
     "year": "2026",
-    "role": "Diseño de producto, frontend del editor y backend de publicación",
-    "intro": "Construí un CMS visual para editar la nueva web de Intiwasi directamente sobre sus páginas HTML. El editor combina un lienzo interactivo, un árbol de capas y un inspector de contenido y diseño. Su objetivo es dar autonomía al equipo sin perder la identidad del sitio ni obligarlo a reconstruir sus páginas en otro sistema.",
-    "challenge": "Un sitio con diseño propio necesita un editor que entienda sus componentes, conserve estilos e interacciones y permita trabajar por dispositivo. Además, editar no debería implicar publicar accidentalmente ni sobrescribir el trabajo de otra sesión.",
+    "role": "Diseño de producto y desarrollo del editor y del sistema de publicación",
+    "intro": "Controla Studio es mi editor visual CMS para gestionar sitios con diseño propio directamente sobre sus páginas HTML. Combina un lienzo interactivo, un árbol de capas y un inspector de contenido y diseño. Este caso muestra su implementación en la web de Intiwasi School: el producto es Controla Studio y la escuela es el cliente cuyo contenido aparece dentro del lienzo.",
+    "challenge": "Los sitios con diseño propio necesitan un editor que conserve sus componentes, estilos e interacciones y permita trabajar por dispositivo. El equipo editorial debe poder mantener el contenido y revisar sus cambios antes de publicarlos, sin reconstruir el sitio en otro sistema.",
     "solution": "Un entorno editorial con selección sobre el lienzo, edición por capas, biblioteca de bloques y controles responsive. Los cambios se guardan como borradores; la publicación conserva versiones anteriores y verifica si la página pública cambió desde que se abrió el borrador.",
     "tech": [
       "JavaScript",
@@ -405,11 +405,22 @@ window.CASE_STUDIES = [
     ],
     "sections": [
       {
+        "id": "implementacion-intiwasi",
+        "title": "El producto y su implementación",
+        "body": "Controla Studio es el producto CMS. Intiwasi School es la implementación que se muestra como ejemplo: su web, sus imágenes y su identidad permanecen dentro del lienzo. La marca de la herramienta y la marca del sitio administrado cumplen funciones distintas.",
+        "bullets": [
+          "Producto: Controla Studio, editor visual CMS.",
+          "Ejemplo de implementación: Intiwasi School.",
+          "Edición sobre las páginas HTML del sitio.",
+          "Capturas adaptadas para mostrar la marca del producto."
+        ]
+      },
+      {
         "id": "lienzo",
         "title": "El contenido se edita donde se ve",
         "body": "La selección reconoce textos, imágenes, botones, secciones, formularios, videos y otros elementos del sitio. El doble clic permite escribir sobre los textos. El inspector organiza los ajustes en Contenido, Diseño y Avanzado, mientras las capas ayudan a localizar y reordenar la estructura.",
-        "image": "/cases/images/intiwasi-editor.webp",
-        "caption": "Captura del editor real ejecutado en un entorno demostrativo local con una copia del contenido público.",
+        "image": "/cases/images/controla-studio-desktop.webp",
+        "caption": "Controla Studio con el sitio de Intiwasi como ejemplo. Captura del entorno demostrativo adaptada con la marca del producto.",
         "bullets": [
           "Selección visual, contenedor superior y ruta del elemento.",
           "Árbol de capas y reordenamiento de bloques.",
@@ -427,8 +438,8 @@ window.CASE_STUDIES = [
           "Encuadre y posición de imágenes por dispositivo.",
           "Vista previa para revisar las interacciones de la página."
         ],
-        "image": "/cases/images/intiwasi-editor-mobile.webp",
-        "caption": "Modo móvil del editor real en la instalación local demostrativa, con una copia del contenido público."
+        "image": "/cases/images/controla-studio-mobile.webp",
+        "caption": "Vista móvil de la implementación en Intiwasi. Captura demostrativa adaptada con la marca Controla Studio."
       },
       {
         "id": "biblioteca",
@@ -471,7 +482,7 @@ window.CASE_STUDIES = [
     ],
     "links": [
       {
-        "label": "Ver acceso a Intiwasi Studio",
+        "label": "Ver acceso a la implementación en Intiwasi",
         "url": "https://intiwasischool.com/edit"
       },
       {
@@ -546,16 +557,16 @@ window.CASE_STUDIES = [
       {
         "id": "cms",
         "title": "Un CMS propio, integrado al diseño",
-        "body": "La autonomía editorial forma parte del proyecto. Intiwasi Studio permite seleccionar elementos sobre el lienzo, editar textos e imágenes, ajustar estilos y revisar la página por dispositivo. Guardar un borrador y publicar son acciones distintas; el historial conserva versiones anteriores.",
-        "image": "/cases/images/intiwasi-editor.webp",
-        "caption": "Editor real en una instalación local aislada, con contenido público de Intiwasi. No corresponde a una sesión administrativa de producción.",
+        "body": "La autonomía editorial forma parte del proyecto. Controla Studio permite seleccionar elementos sobre el lienzo, editar textos e imágenes, ajustar estilos y revisar la página por dispositivo. Guardar un borrador y publicar son acciones distintas; el historial conserva versiones anteriores.",
+        "image": "/cases/images/controla-studio-desktop.webp",
+        "caption": "Controla Studio con el sitio de Intiwasi como ejemplo. Captura del entorno demostrativo adaptada con la marca del producto.",
         "bullets": [
           "Edición visual de textos, imágenes, enlaces y componentes.",
           "Biblioteca de elementos, capas y ajustes por dispositivo.",
           "Borradores, vista previa, historial y publicación explícita.",
           "Control de páginas publicadas y sincronización de bloques compartidos."
         ],
-        "related": "intiwasi-visual-studio"
+        "related": "controla-studio"
       },
       {
         "id": "ecosistema",
@@ -585,7 +596,7 @@ window.CASE_STUDIES = [
       }
     ],
     "related": [
-      "intiwasi-visual-studio",
+      "controla-studio",
       "tinkuy"
     ]
   },
@@ -982,7 +993,7 @@ window.CASE_STUDIES = [
     ],
     "related": [
       "intiwasi-sms-marketing",
-      "intiwasi-visual-studio"
+      "controla-studio"
     ]
   }
 ];
