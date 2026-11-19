@@ -1,8 +1,17 @@
 const themeButton=document.getElementById('case-theme');
 themeButton.addEventListener('click',()=>{document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',document.documentElement.classList.contains('dark')?'dark':'light')}catch{}});
 const imageDialog=document.getElementById('image-dialog');
-let imageTrigger;
-document.querySelectorAll('.image-expand').forEach(button=>button.addEventListener('click',()=>{imageTrigger=button;const img=button.querySelector('img');imageDialog.querySelector('img').src=img.src;imageDialog.querySelector('img').alt=img.alt;imageDialog.querySelector('p').textContent=button.closest('figure').querySelector('figcaption').textContent;imageDialog.showModal()}));
+let imageTrigger, imageIndex=0;
+const imageButtons=[...document.querySelectorAll('.image-expand')];
+const uniqueImages=[...new Map(imageButtons.map(button=>[button.querySelector('img').src,button])).values()];
+const imageNav=document.createElement('div');imageNav.className='viewer-controls';
+const previousImage=document.createElement('button'), nextImage=document.createElement('button'), imagePosition=document.createElement('span');
+previousImage.type=nextImage.type='button';previousImage.textContent='Anterior';nextImage.textContent='Siguiente';imagePosition.setAttribute('aria-live','polite');
+imageNav.append(previousImage,imagePosition,nextImage);imageDialog.querySelector('img').before(imageNav);
+function showImageAt(index){imageIndex=index;const button=uniqueImages[index],img=button.querySelector('img');imageDialog.querySelector('img').src=img.src;imageDialog.querySelector('img').alt=img.alt;imageDialog.querySelector('p').textContent=button.closest('figure').querySelector('figcaption').textContent;imagePosition.textContent=`Captura ${index+1} de ${uniqueImages.length}`;previousImage.disabled=index===0;nextImage.disabled=index===uniqueImages.length-1;imageDialog.scrollTop=0;}
+imageButtons.forEach(button=>button.addEventListener('click',()=>{imageTrigger=button;showImageAt(uniqueImages.findIndex(item=>item.querySelector('img').src===button.querySelector('img').src));imageDialog.showModal()}));
+previousImage.addEventListener('click',()=>showImageAt(imageIndex-1));nextImage.addEventListener('click',()=>showImageAt(imageIndex+1));
+imageDialog.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'&&imageIndex>0){event.preventDefault();showImageAt(imageIndex-1)}if(event.key==='ArrowRight'&&imageIndex<uniqueImages.length-1){event.preventDefault();showImageAt(imageIndex+1)}});
 document.getElementById('close-image').addEventListener('click',()=>imageDialog.close());
 imageDialog.addEventListener('click',event=>{if(event.target===imageDialog){const r=imageDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)imageDialog.close()}});
 imageDialog.addEventListener('close',()=>imageTrigger?.focus({preventScroll:true}));

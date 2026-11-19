@@ -7,12 +7,14 @@ Las páginas tienen enlaces directos, navegación por secciones, capturas amplia
 ## Capturas y procedencia
 
 - Intiwasi, BeAware, landing, portal de empleos y CasaGold público: capturas de los sitios publicados.
-- Recruit: plantilla conversacional sin respuestas de postulantes; formulario de cliente vacío con identidad de empresa oculta.
-- CasaGold app: dashboard de asesor con cifras comerciales ocultas. El módulo editorial aparece como función complementaria de la aplicación inmobiliaria.
+- Recruit: constructor de flujos, publicación, configuración de IA, etapas y solicitud de cliente. Las identidades, respuestas y credenciales visibles son ficticias.
+- CasaGold app: dashboard, CRM, registro de leads, propiedades y expedientes con nombres, contactos y cifras de demostración. El módulo editorial aparece como función complementaria de la aplicación inmobiliaria.
 - Controla Studio: editor visual CMS propio, mostrado con la implementación de Intiwasi. Las capturas provienen de un entorno local aislado y se adaptaron mediante la herramienta de imágenes para sustituir la marca de la aplicación por Controla Studio. El contenido de Intiwasi permanece como ejemplo dentro del lienzo. Las páginas de producción no se modificaron.
-- Tinkuy: pantalla pública de acceso y capturas previas de la interfaz web con datos ficticios. No son capturas de un dispositivo iOS o simulador.
-- SMS: panel principal sin registros de contactos. MKT: instancia del VPS, con valores ocultos; el dominio público mostraba Deployment Paused durante la revisión.
-- Email: Mailer sin destinatarios seleccionados y con selector de listas oculto; Newsletter Studio con plantilla semanal pública abierta localmente en el navegador, sin guardar ni enviar.
+- Tinkuy: capturas de la interfaz web con usuarios y reportes ficticios. No son capturas de un dispositivo iOS o simulador.
+- SMS: panel, importación y formularios de campañas sin envíos ni registros de contactos. MKT: instancia del VPS con cifras ficticias; el dominio público mostraba Deployment Paused durante la revisión.
+- Email: Mailer con listas y contenido de demostración, sin destinatarios seleccionados; Newsletter Studio con plantilla semanal pública abierta localmente en el navegador, sin guardar ni enviar.
+
+Los datos privados se sustituyeron únicamente en la vista del navegador antes de capturar, sin guardar cambios en las aplicaciones de clientes. Las páginas identifican los ejemplos con datos ficticios. Las nuevas vistas de Controla Studio proceden del editor aislado con la marca Controla en su interfaz.
 
 El contenido describe funciones revisadas en interfaces y código, junto con las aclaraciones del autor. No se añadieron porcentajes de mejora ni resultados comerciales sin medición.
 

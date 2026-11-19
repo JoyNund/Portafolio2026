@@ -1,4 +1,4 @@
-// Public case studies. Public content, redacted captures and isolated demonstration data.
+// Public case studies. Demonstration records are fictional and never saved to production.
 window.CASE_STUDIES = [
   {
     "slug": "beaware-recruit",
@@ -60,19 +60,27 @@ window.CASE_STUDIES = [
           "Continuidad entre la oportunidad publicada y la gestión de postulantes."
         ],
         "related": "beaware-empleos",
-        "relatedLabel": "Explorar el portal de empleos"
+        "relatedLabel": "Explorar el portal de empleos",
+        "image": "/cases/images/recruit-publica.webp",
+        "caption": "Página de convocatoria generada por Recruit, presentada como una oferta de demostración. Incluye la entrada al formulario y a WhatsApp."
       },
       {
         "id": "flujos",
         "title": "Flujos reutilizables y reglas explícitas",
         "body": "Cada puesto necesita preguntas y criterios diferentes. El constructor permite definir el recorrido de una convocatoria y guardar su configuración como plantilla para reutilizarla. Las plantillas tienen una vista de lectura; los cambios se realizan desde la convocatoria y pueden volver a guardarse como plantilla.",
         "image": "/cases/images/recruit-flujo.webp",
-        "caption": "Captura de la aplicación: vista de lectura de una plantilla conversacional. Se muestran preguntas del flujo, sin respuestas de postulantes.",
+        "caption": "Plantilla de conversación con título y contenido de demostración; no contiene respuestas de postulantes.",
         "bullets": [
           "Preguntas y variables adaptadas al perfil buscado.",
           "Ramas según respuestas y puntajes asociados a disparadores.",
           "Plantillas reutilizables entre convocatorias.",
           "Playground para revisar el comportamiento del recorrido."
+        ],
+        "gallery": [
+          {
+            "image": "/cases/images/recruit-builder.webp",
+            "caption": "Constructor del chatbot: tipos de nodo, campos de registro y conexión entre pasos. La vista muestra la configuración, sin respuestas de candidatos."
+          }
         ]
       },
       {
@@ -85,7 +93,9 @@ window.CASE_STUDIES = [
           "Resumen curricular, análisis y puntajes vinculados al postulante.",
           "Evaluación por etapas, notas y actualización del ranking."
         ],
-        "note": "Los puntajes apoyan la revisión del reclutador. No se presentan como una garantía de idoneidad ni como una decisión final de contratación."
+        "note": "Los puntajes apoyan la revisión del reclutador. No se presentan como una garantía de idoneidad ni como una decisión final de contratación.",
+        "image": "/cases/images/recruit-ia.webp",
+        "caption": "Configuración de proveedor y modelo de IA. Las credenciales visibles son ficticias y no válidas."
       },
       {
         "id": "operacion",
@@ -98,7 +108,13 @@ window.CASE_STUDIES = [
           "Mensajería, notificaciones y seguimiento público de postulaciones."
         ],
         "image": "/cases/images/recruit-cliente.webp",
-        "caption": "Vista de cliente: formulario de solicitud de convocatoria, sin enviar. La identidad de la empresa está oculta."
+        "caption": "Vista del cliente: solicitud de una convocatoria con empresa y contenido ficticios. No se envió ninguna solicitud.",
+        "gallery": [
+          {
+            "image": "/cases/images/recruit-etapas.webp",
+            "caption": "Seguimiento por etapas con tres postulantes ficticios: identidad de demostración, evaluación curricular, filtros y puntaje."
+          }
+        ]
       },
       {
         "id": "arquitectura",
@@ -126,7 +142,8 @@ window.CASE_STUDIES = [
     "related": [
       "beaware-empleos",
       "beaware-web"
-    ]
+    ],
+    "demoNote": "Las personas, empresas de ejemplo y puntajes de las vistas demostrativas son ficticios. Las capturas explican el funcionamiento del producto."
   },
   {
     "slug": "casagold",
@@ -176,7 +193,34 @@ window.CASE_STUDIES = [
           "Dashboard global y vistas para asesores."
         ],
         "image": "/cases/images/casagold-app.webp",
-        "caption": "Interfaz real del dashboard de asesor en Gold Panel. Los valores comerciales y los datos numéricos están ocultos."
+        "caption": "Dashboard del asesor con cifras ficticias para explicar cartera, conversión y comisiones."
+      },
+      {
+        "id": "crm",
+        "title": "El seguimiento comercial, visto de cerca",
+        "body": "El CRM organiza las oportunidades por origen y estado y permite buscar contactos, registrar comentarios y dar continuidad a cada consulta. El registro manual complementa las entradas que llegan desde formularios y conexiones.",
+        "image": "/cases/images/casagold-crm.webp",
+        "caption": "Vista del CRM con nombres, teléfonos, correos, zonas y notas ficticios.",
+        "gallery": [
+          {
+            "image": "/cases/images/casagold-lead-manual.webp",
+            "caption": "Formulario de lead manual con un contacto ficticio. La captura muestra el formulario, sin guardar el registro."
+          }
+        ]
+      },
+      {
+        "id": "cartera",
+        "title": "Registrar y localizar una propiedad",
+        "body": "El formulario reúne los datos de la propiedad, sus características, el tipo de operación y la ubicación en el mapa. Esta información alimenta la cartera que el asesor gestiona desde su panel.",
+        "image": "/cases/images/casagold-nueva-propiedad.webp",
+        "caption": "Alta de propiedad: características, precio y ubicación. Se muestra el formulario sin guardar una propiedad."
+      },
+      {
+        "id": "expedientes",
+        "title": "Documentar la operación inmobiliaria",
+        "body": "Los expedientes relacionan una propiedad con la operación y sus participantes. El formulario organiza datos del vendedor o arrendador, comprador o arrendatario, contrato principal y anexos.",
+        "image": "/cases/images/casagold-expediente.webp",
+        "caption": "Creación de expediente operativo con campos de ejemplo ficticios. No se registró una operación ni se subieron documentos."
       },
       {
         "id": "asesores",
@@ -245,7 +289,8 @@ window.CASE_STUDIES = [
     "related": [
       "beaware-recruit",
       "tinkuy"
-    ]
+    ],
+    "demoNote": "Nombres, contactos, notas y cifras comerciales de las vistas demostrativas son ficticios. Los formularios se muestran sin registrar operaciones."
   },
   {
     "slug": "tinkuy",
@@ -287,8 +332,8 @@ window.CASE_STUDIES = [
         "id": "roles",
         "title": "Tres roles, tres formas de usar la escuela",
         "body": "El diseño parte de las responsabilidades de cada persona. Las familias acceden a la información vinculada a sus hijos; los docentes trabajan con sus clases; la administración dispone de herramientas de gestión transversal.",
-        "image": "/cases/images/tinkuy.webp",
-        "caption": "Pantalla pública de acceso a Tinkuy. Las vistas con información de familias y estudiantes no se publican en este caso.",
+        "image": "/cases/images/tinkuy-dashboard.png",
+        "caption": "Panel familiar móvil con accesos a tareas cotidianas y feed de comunidad. Cuenta y publicaciones de demostración.",
         "bullets": [
           "Panel y accesos según el perfil del usuario.",
           "Vinculación entre familias, estudiantes y salones.",
@@ -334,6 +379,13 @@ window.CASE_STUDIES = [
         ]
       },
       {
+        "id": "reportes",
+        "title": "Un reporte que reúne la información del estudiante",
+        "body": "El reporte del estudiante concentra progreso académico, evaluaciones registradas, asistencia, logros y observaciones. La familia puede consultar el contexto de aprendizaje en una vista que complementa las unidades y el calendario.",
+        "image": "/cases/images/tinkuy-report.jpg",
+        "caption": "Reporte académico con el estudiante Alex Demo y datos escolares ficticios."
+      },
+      {
         "id": "detalle-unidad",
         "title": "Del programa a la conversación con la familia",
         "body": "Cada unidad puede reunir una carta de bienvenida y un espacio de reflexión. La información académica se presenta como una experiencia que la familia puede leer y acompañar, junto al progreso del estudiante.",
@@ -367,7 +419,8 @@ window.CASE_STUDIES = [
     "related": [
       "intiwasi-web",
       "controla-studio"
-    ]
+    ],
+    "demoNote": "Las vistas privadas utilizan una familia, un salón y registros escolares ficticios del entorno de demostración. Las imágenes corresponden a la interfaz web."
   },
   {
     "slug": "controla-studio",
@@ -439,7 +492,13 @@ window.CASE_STUDIES = [
           "Vista previa para revisar las interacciones de la página."
         ],
         "image": "/cases/images/controla-studio-mobile.webp",
-        "caption": "Vista móvil de la implementación en Intiwasi. Captura demostrativa adaptada con la marca Controla Studio."
+        "caption": "Vista móvil de la implementación en Intiwasi. Captura demostrativa adaptada con la marca Controla Studio.",
+        "gallery": [
+          {
+            "image": "/cases/images/controla-studio-diseno.webp",
+            "caption": "Inspector de diseño de un elemento seleccionado: tipografía, distribución y ajustes del componente en el lienzo."
+          }
+        ]
       },
       {
         "id": "biblioteca",
@@ -450,6 +509,16 @@ window.CASE_STUDIES = [
           "Biblioteca de medios y normalización de imágenes a WebP.",
           "Paleta y tipografías compartidas.",
           "Sincronización explícita de navbar y footer entre páginas."
+        ],
+        "gallery": [
+          {
+            "image": "/cases/images/controla-studio-bloques.webp",
+            "caption": "Biblioteca de componentes en el editor: elementos básicos y secciones que pueden incorporarse al lienzo."
+          },
+          {
+            "image": "/cases/images/controla-studio-estilos.webp",
+            "caption": "Panel de estilos globales: paleta del sitio y controles para guardar un borrador o aplicar los cambios."
+          }
         ]
       },
       {
@@ -668,6 +737,13 @@ window.CASE_STUDIES = [
           "Formulario directo o WhatsApp según la configuración del puesto.",
           "Información de postulación conectada con la gestión de reclutamiento."
         ]
+      },
+      {
+        "id": "empresas",
+        "title": "Un recorrido específico para empresas",
+        "body": "La entrada de empresas dispone de un formulario propio para solicitar acceso al servicio de reclutamiento. El portal ofrece así recorridos distintos para quien busca una oportunidad y para quien necesita publicar una convocatoria.",
+        "image": "/cases/images/empleos-empresa.webp",
+        "caption": "Registro de empresa con nombre, correo y teléfono ficticios. La solicitud no se envió."
       }
     ],
     "outcomes": [
@@ -684,7 +760,8 @@ window.CASE_STUDIES = [
     "related": [
       "beaware-recruit",
       "beaware-web"
-    ]
+    ],
+    "demoNote": "El ejemplo de registro de empresa utiliza información ficticia y no fue enviado."
   },
   {
     "slug": "beaware-web",
@@ -847,14 +924,31 @@ window.CASE_STUDIES = [
           "Contador de caracteres y fragmentos de texto reutilizables.",
           "Soporte de contenido multimedia en el flujo de envío.",
           "Registro de envíos correctos y fallidos."
+        ],
+        "gallery": [
+          {
+            "image": "/cases/images/sms-importar.webp",
+            "caption": "Entrada de importación CSV: carga de archivo y preparación del mapeo de columnas. No se importaron contactos."
+          },
+          {
+            "image": "/cases/images/sms-campana.webp",
+            "caption": "Formulario de nueva campaña con nombre, segmento y mensaje. No se creó ni se envió una campaña."
+          }
         ]
+      },
+      {
+        "id": "mensaje-individual",
+        "title": "Atender también una conversación individual",
+        "body": "El envío manual permite seleccionar un contacto o indicar un número, redactar el mensaje y utilizar variables de personalización. La interfaz muestra el contador de caracteres y distingue el texto simple del contenido multimedia.",
+        "image": "/cases/images/sms-manual.webp",
+        "caption": "Pantalla de SMS manual sin destinatario seleccionado. No se envió ningún mensaje."
       },
       {
         "id": "conversiones",
         "title": "MKT conecta la campaña con su resultado",
         "body": "La aplicación de Marketing utiliza los estados de los leads para mostrar contacto y conversión. Distingue etapas como contacto por SMS o llamada, interés, cita, asistencia y matrícula, junto con estados pendientes o descartados. La matrícula constituye la conversión definida en este contexto escolar.",
         "image": "/cases/images/mkt.webp",
-        "caption": "Panel de Marketing revisado en la instancia del VPS. La información de leads y los valores comerciales están ocultos.",
+        "caption": "Panel de campaña con inversión, métricas y embudo preparados con cifras ficticias.",
         "bullets": [
           "Campañas y segmentos vinculados al seguimiento.",
           "Porcentajes de contacto y conversión.",
@@ -889,7 +983,8 @@ window.CASE_STUDIES = [
     "related": [
       "intiwasi-email-marketing",
       "beaware-recruit"
-    ]
+    ],
+    "demoNote": "Las cifras de la campaña y del embudo son ficticias y se utilizan para mostrar la interfaz. No representan resultados comerciales reales."
   },
   {
     "slug": "intiwasi-email-marketing",
@@ -937,6 +1032,12 @@ window.CASE_STUDIES = [
           "Edición sobre la vista previa y formularios de contenido.",
           "Reordenamiento, duplicación, deshacer y rehacer.",
           "HTML con tablas y estilos en línea para su uso en correo."
+        ],
+        "gallery": [
+          {
+            "image": "/cases/images/newsletter-mobile.webp",
+            "caption": "Revisión de la plantilla semanal en modo móvil dentro de Newsletter Studio, sin guardar ni enviar una edición."
+          }
         ]
       },
       {
@@ -955,7 +1056,7 @@ window.CASE_STUDIES = [
         "title": "Mailer: redacción y audiencias en una interfaz",
         "body": "Mailer reúne asunto, destinatarios y contenido enriquecido, con vista previa del mensaje. Las listas permiten seleccionar audiencias y completar destinatarios deduplicados; el flujo incluye copia, copia oculta, versión alternativa en texto y envío de prueba.",
         "image": "/cases/images/mailer.webp",
-        "caption": "Interfaz de composición de Mailer. El selector de listas está oculto y no hay destinatarios seleccionados.",
+        "caption": "Mailer con listas y contenido ficticios para mostrar redacción, selección de audiencia y vista previa. No se realizó ningún envío.",
         "bullets": [
           "Editor enriquecido con imágenes, enlaces y estructura de contenido.",
           "Gestión e importación de listas de destinatarios.",
@@ -994,6 +1095,7 @@ window.CASE_STUDIES = [
     "related": [
       "intiwasi-sms-marketing",
       "controla-studio"
-    ]
+    ],
+    "demoNote": "Las listas, destinatarios y contenido comercial de los ejemplos son ficticios. Las capturas no corresponden a envíos realizados."
   }
 ];
