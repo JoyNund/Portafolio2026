@@ -9,7 +9,7 @@ Las páginas tienen enlaces directos, navegación por secciones, capturas amplia
 - Intiwasi, BeAware, landing, portal de empleos y CasaGold público: capturas de los sitios publicados.
 - Recruit: plantilla conversacional sin respuestas de postulantes; formulario de cliente vacío con identidad de empresa oculta.
 - CasaGold app: dashboard de asesor con cifras comerciales ocultas. El módulo editorial aparece como función complementaria de la aplicación inmobiliaria.
-- Intiwasi Visual Studio: código real del editor ejecutado en una instalación local aislada, con contenido público y un usuario ficticio. Las páginas de producción no se modificaron para obtener las capturas.
+- Intiwasi Studio: código real del editor ejecutado en una instalación local aislada, con contenido público y un usuario ficticio. Las páginas de producción no se modificaron para obtener las capturas.
 - Tinkuy: pantalla pública de acceso y capturas previas de la interfaz web con datos ficticios. No son capturas de un dispositivo iOS o simulador.
 - SMS: panel principal sin registros de contactos. MKT: instancia del VPS, con valores ocultos; el dominio público mostraba Deployment Paused durante la revisión.
 - Email: Mailer sin destinatarios seleccionados y con selector de listas oculto; Newsletter Studio con plantilla semanal pública abierta localmente en el navegador, sin guardar ni enviar.

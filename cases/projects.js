@@ -371,7 +371,7 @@ window.CASE_STUDIES = [
   },
   {
     "slug": "intiwasi-visual-studio",
-    "title": "Intiwasi Visual Studio",
+    "title": "Intiwasi Studio",
     "client": "Intiwasi Spanish Immersion School",
     "description": "Editor visual a medida: lienzo, capas, diseño responsive, borradores, historial y publicación.",
     "tagline": "Un editor propio para que el equipo dé forma a su web.",
@@ -381,7 +381,7 @@ window.CASE_STUDIES = [
       "Producto",
       "UI/UX"
     ],
-    "type": "CMS visual a medida",
+    "type": "Editor visual a medida",
     "year": "2026",
     "role": "Diseño de producto, frontend del editor y backend de publicación",
     "intro": "Construí un CMS visual para editar la nueva web de Intiwasi directamente sobre sus páginas HTML. El editor combina un lienzo interactivo, un árbol de capas y un inspector de contenido y diseño. Su objetivo es dar autonomía al equipo sin perder la identidad del sitio ni obligarlo a reconstruir sus páginas en otro sistema.",
@@ -471,7 +471,7 @@ window.CASE_STUDIES = [
     ],
     "links": [
       {
-        "label": "Ver acceso a Visual Studio",
+        "label": "Ver acceso a Intiwasi Studio",
         "url": "https://intiwasischool.com/edit"
       },
       {
@@ -546,7 +546,7 @@ window.CASE_STUDIES = [
       {
         "id": "cms",
         "title": "Un CMS propio, integrado al diseño",
-        "body": "La autonomía editorial forma parte del proyecto. Intiwasi Visual Studio permite seleccionar elementos sobre el lienzo, editar textos e imágenes, ajustar estilos y revisar la página por dispositivo. Guardar un borrador y publicar son acciones distintas; el historial conserva versiones anteriores.",
+        "body": "La autonomía editorial forma parte del proyecto. Intiwasi Studio permite seleccionar elementos sobre el lienzo, editar textos e imágenes, ajustar estilos y revisar la página por dispositivo. Guardar un borrador y publicar son acciones distintas; el historial conserva versiones anteriores.",
         "image": "/cases/images/intiwasi-editor.webp",
         "caption": "Editor real en una instalación local aislada, con contenido público de Intiwasi. No corresponde a una sesión administrativa de producción.",
         "bullets": [
