@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta etiquetas para SEO -->
-    <meta name="description" content="Portafolio profesional de John Chávez Zevallos. Desarrollo digital y soluciones multimedia, especializado en diseño UI/UX, desarrollo web y contenido audiovisual.">
+    <meta name="description" content="John Chávez Zevallos: desarrollo de soluciones digitales a medida para empresas. Aplicaciones de gestión, portales, integraciones y automatizaciones que conectan captación y operación.">
+    <link rel="canonical" href="https://john.controla.digital/">
     <meta name="keywords" content="desarrollo web, diseño UI/UX, multimedia, marketing digital, motion graphics, branding, desarrollo digital">
     <meta name="author" content="John Chávez Zevallos">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://web.facebook.com/zejovahnll0sc/">
-    <meta property="og:title" content="John Chávez Zevallos | Portafolio Creativo">
-    <meta property="og:description" content="Desarrollo digital y soluciones multimedia. Especializado en diseño UI/UX, desarrollo web y contenido audiovisual.">
-    <meta property="og:image" content="https://portafolio.jcsoluciones.online/faviconRD.webp">
+    <meta property="og:url" content="https://john.controla.digital/">
+    <meta property="og:title" content="John Chávez Zevallos | Soluciones digitales a medida">
+    <meta property="og:description" content="Soluciones digitales a medida para empresas: aplicaciones de gestión, portales, integraciones y automatizaciones.">
+    <meta property="og:image" content="https://john.controla.digital/cases/images/intiwasi-editor.webp">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://x.com/sisiyalosabemos/">
-    <meta property="twitter:title" content="John Chávez Zevallos | Portafolio Creativo">
-    <meta property="twitter:description" content="Desarrollo digital y soluciones multimedia. Especializado en diseño UI/UX, desarrollo web y contenido audiovisual.">
-    <meta property="twitter:image" content="https://portafolio.jcsoluciones.online/faviconRD.webp">
+    <meta property="twitter:url" content="https://john.controla.digital/">
+    <meta property="twitter:title" content="John Chávez Zevallos | Soluciones digitales a medida">
+    <meta property="twitter:description" content="Aplicaciones de gestión, portales e integraciones para conectar la captación y la operación de tu empresa.">
+    <meta property="twitter:image" content="https://john.controla.digital/cases/images/intiwasi-editor.webp">
     
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="faviconRD.webp">
-    <title>John Chávez Zevallos | Portafolio Creativo</title>
+    <title>John Chávez Zevallos | Soluciones digitales a medida</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles-compiled.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cases/home.css?v=20261118">
 </head>
 <body class="font-poppins transition-colors duration-300">
     <nav class="fixed w-full z-50">
@@ -36,7 +38,7 @@
                 <a href="#inicio">
                     <img src="faviconRD.webp" alt="Logo" class="h-8 w-8 rounded-full">
                 </a>
-                <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none">
+                <button id="mobile-menu-button" aria-label="Abrir menú" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path class="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
                         <path class="mobile-menu-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
@@ -55,7 +57,7 @@
                     <button id="about-btn" class="hover:text-cyan-500">Sobre Mí</button>
                     <a href="#contacto" class="hover:text-cyan-500">Contacto</a>
                 </div>
-                <button id="theme-toggle" class="p-2">
+                <button id="theme-toggle" aria-label="Cambiar tema" class="p-2">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path class="hidden dark:block" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
                         <path class="dark:hidden" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
@@ -82,11 +84,14 @@
 
     <main>
         <section id="inicio" class="min-h-screen flex items-center justify-center">
-            <div class="text-center relative p-6">
+            <div class="text-center relative p-6 hero-copy">
+                <p class="hero-eyebrow">Software a medida · Integraciones · Automatización</p>
                 <h1 class="text-5xl font-light mb-4 cursor-pointer hover:text-cyan-500 transition-colors" id="name-title">John Chávez Zevallos</h1>
                 <p class="text-2xl text-gray-500 font-light">
-                    Desarrollo digital & Soluciones multimedia
+                    Soluciones digitales a medida para empresas
                 </p>
+                <p class="hero-description">Diseño y desarrollo aplicaciones de gestión, portales y automatizaciones que conectan la captación, la atención y la operación de tu negocio.</p>
+                <div class="hero-actions"><a href="#proyectos" class="hero-primary">Explorar proyectos</a><a href="#contacto" class="hero-secondary">Hablemos de tu idea</a></div>
                 <div class="absolute bottom-[-120px] left-0 right-0 flex justify-center">
                     <button id="scroll-down" class="group flex flex-col items-center text-gray-400 hover:text-cyan-500 transition-colors">
                         <span class="text-sm mb-2 tracking-wider font-light">Explorar</span>
@@ -101,7 +106,10 @@
 
         <section id="proyectos" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-light mb-12 text-center tracking-widest uppercase text-gray-600 dark:text-gray-200">Proyectos Destacados</h2>
+                <div class="projects-intro"><p class="hero-eyebrow">Trabajo seleccionado</p><h2 class="text-3xl font-light mb-12 text-center tracking-widest uppercase text-gray-600 dark:text-gray-200">Proyectos Destacados</h2><p>Del sitio público a la herramienta que mueve la operación. Explora los productos, sus interfaces y lo que hay detrás de cada solución.</p></div>
+                <div class="cms-highlight"><div><span>Diseño que el cliente puede mantener</span><p>CMS a medida para editar contenidos, imágenes y secciones. En Intiwasi, un estudio visual completo con borradores, historial y publicación.</p></div><a href="/proyectos/intiwasi-visual-studio/">Conocer Visual Studio</a></div>
+                <div class="project-filters" role="group" aria-label="Filtrar proyectos"><button type="button" data-project-filter="all" aria-pressed="true">Todos</button><button type="button" data-project-filter="apps" aria-pressed="false">Aplicaciones</button><button type="button" data-project-filter="cms" aria-pressed="false">Webs y CMS</button><button type="button" data-project-filter="automation" aria-pressed="false">Automatización</button></div>
+                <p id="project-count" class="project-count" aria-live="polite"></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Los proyectos se cargarán dinámicamente con JavaScript -->
                 </div>
@@ -163,16 +171,16 @@
                 <div class="p-8">
                     <h2 class="text-4xl font-light mb-6 tracking-widest uppercase text-gray-700 dark:text-gray-200">!Hola! Soy John</h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 font-light mb-8">
-                        Especialista digital con más de 5 años de experiencia en producción de contenidos digitales, trade marketing digital, desarrollo web y automatizaciones. Me destaco por digitalizar procesos de organizaciones y desarrollar marcas con estrategias de performance.
+                        Diseño y desarrollo soluciones digitales a medida para empresas. Conecto aplicaciones de gestión, portales, integraciones y automatizaciones para que la información avance junto con el trabajo. Mi experiencia en diseño y marketing me ayuda a entender tanto la captación de clientes como la operación que viene después.
                     </p>
 
                     <h3 class="text-xl font-light mb-4 tracking-wider uppercase text-gray-600 dark:text-gray-200">Habilidades:</h3>
                     <div class="flex flex-wrap gap-3 skill-tags mb-8">
                         <span class="skill-tag">Diseño UI/UX</span>
-                        <span class="skill-tag">Branding</span>
-                        <span class="skill-tag">Marketing Digital</span>
-                        <span class="skill-tag">Desarrollo Web</span>
-                        <span class="skill-tag">Motion Graphics</span>
+                        <span class="skill-tag">Software a medida</span>
+                        <span class="skill-tag">Aplicaciones de gestión</span>
+                        <span class="skill-tag">Integraciones</span>
+                        <span class="skill-tag">Automatización</span>
                     </div>
 
                     <img src="profile1.webp" alt="John Chávez" class="profile-image">
@@ -246,8 +254,8 @@
     </div>
 
     <!-- Modal de Proyecto -->
-    <div id="project-modal" class="fixed inset-0 bg-black z-50 hidden">
-        <button id="close-project" class="fixed top-4 right-4 text-white hover:text-gray-300 z-50">
+    <div id="project-modal" role="dialog" aria-modal="true" aria-label="Detalle del proyecto" class="fixed inset-0 bg-black z-50 hidden">
+        <button id="close-project" aria-label="Cerrar proyecto" class="fixed top-4 right-4 text-white hover:text-gray-300 z-50">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -337,6 +345,7 @@
         </div>
     </div>
 
-    <script src="script.js?v=1.5"></script>
+    <script src="cases/projects.js?v=20261118"></script>
+    <script src="script.js?v=20261118"></script>
 </body>
 </html> 

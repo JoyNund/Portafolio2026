@@ -22,6 +22,7 @@ mobileMenuButton?.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('active');
     mobileMenuButton.classList.toggle('active');
+    mobileMenuButton.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
     
     const menuIcon = mobileMenuButton.querySelector('.mobile-menu-icon');
     const closeIcon = mobileMenuButton.querySelector('.mobile-menu-close');
@@ -1118,19 +1119,32 @@ function shuffle(array) {
 }
 
 // Load Projects
-function loadProjects() {
+function loadProjects(filter = 'all') {
     const grid = document.querySelector('#proyectos .grid');
     if (!grid) return;
-
-    projects.forEach((project, index) => {
-        const card = document.createElement('div');
+    const recentProjects = (window.CASE_STUDIES || []).map(project => ({...project, caseUrl: `/proyectos/${project.slug}/`}));
+    const allProjects = [...recentProjects, ...projects];
+    const filtered = allProjects.filter(project => {
+        if (filter === 'apps') return project.categories.some(cat => ['Aplicaciones', 'Apps', 'CRM', 'Project Management', 'E-learning'].includes(cat));
+        if (filter === 'cms') return project.categories.some(cat => ['Webs y CMS', 'CMS', 'Desarrollo web'].includes(cat));
+        if (filter === 'automation') return project.categories.some(cat => ['Automatización', 'WhatsApp', 'IA'].includes(cat));
+        return true;
+    });
+    grid.replaceChildren();
+    const counter = document.getElementById('project-count');
+    if (counter) counter.textContent = `${filtered.length} proyectos para explorar`;
+    filtered.forEach((project, index) => {
+        const card = document.createElement(project.caseUrl ? 'a' : 'button');
+        if (project.caseUrl) card.href = project.caseUrl;
+        else card.type = 'button';
         card.className = 'project-card rounded-2xl overflow-hidden group cursor-pointer';
+        card.setAttribute('aria-label', `${project.caseUrl ? 'Explorar' : 'Abrir'} proyecto: ${project.title}`);
         card.style.animationDelay = `${index * 0.1}s`;
 
         card.innerHTML = `
             <div class="relative h-64 overflow-hidden">
                 <img src="${project.image}" alt="${project.title}"
-                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                     loading="lazy" width="1440" height="1000" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                      onerror="if(this.src!=='placeholder.webp'){this.src='placeholder.webp';}else{this.style.display='none';}">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
@@ -1150,15 +1164,21 @@ function loadProjects() {
                 <p class="text-gray-500 dark:text-gray-400 text-sm">
                     ${project.description}
                 </p>
+                <span class="project-read-more">${project.caseUrl ? 'Explorar caso de estudio' : 'Ver proyecto'}</span>
             </div>
         `;
         
         // Agregar evento click para abrir el modal del proyecto
-        card.addEventListener('click', () => openProjectModal(project));
+        if (!project.caseUrl) card.addEventListener('click', () => openProjectModal(project));
         
         grid.appendChild(card);
     });
 }
+
+document.querySelectorAll('[data-project-filter]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-project-filter]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    loadProjects(button.dataset.projectFilter);
+}));
 
 // Abrir modal de proyecto
 function openProjectModal(project) {
@@ -1242,6 +1262,9 @@ function openProjectModal(project) {
     // Mostrar el modal
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
+    modal.querySelector('.h-screen').scrollTop = 0;
+    modal._returnFocus = document.activeElement;
+    document.getElementById('close-project')?.focus({ preventScroll: true });
 }
 
 // Cerrar modal de proyecto
@@ -1249,6 +1272,17 @@ document.getElementById('close-project')?.addEventListener('click', () => {
     const modal = document.getElementById('project-modal');
     modal?.classList.add('hidden');
     document.body.style.overflow = '';
+    modal?._returnFocus?.focus({ preventScroll: true });
+});
+
+document.getElementById('project-modal')?.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') document.getElementById('close-project')?.click();
+    if (event.key === 'Tab') {
+        const controls = [...event.currentTarget.querySelectorAll('button, a[href], [tabindex="0"]')].filter(el => el.getClientRects().length);
+        const first = controls[0], last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    }
 });
 
 // Load Portfolio Items

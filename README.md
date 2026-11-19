@@ -1,6 +1,6 @@
 # 🎨 Portafolio - John Chávez Zevallos
 
-Portafolio profesional moderno y optimizado construido con Tailwind CSS, JavaScript vanilla y diseño responsive.
+Portafolio de soluciones digitales a medida para empresas, construido con Tailwind CSS, JavaScript vanilla y diseño responsive. Incluye casos detallados de aplicaciones, portales, CMS, integraciones y automatización. Ver [guía de casos](cases/README.md).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

@@ -1,0 +1,11 @@
+const themeButton=document.getElementById('case-theme');
+themeButton.addEventListener('click',()=>{document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',document.documentElement.classList.contains('dark')?'dark':'light')}catch{}});
+const imageDialog=document.getElementById('image-dialog');
+let imageTrigger;
+document.querySelectorAll('.image-expand').forEach(button=>button.addEventListener('click',()=>{imageTrigger=button;const img=button.querySelector('img');imageDialog.querySelector('img').src=img.src;imageDialog.querySelector('img').alt=img.alt;imageDialog.querySelector('p').textContent=button.closest('figure').querySelector('figcaption').textContent;imageDialog.showModal()}));
+document.getElementById('close-image').addEventListener('click',()=>imageDialog.close());
+imageDialog.addEventListener('click',event=>{if(event.target===imageDialog){const r=imageDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)imageDialog.close()}});
+imageDialog.addEventListener('close',()=>imageTrigger?.focus({preventScroll:true}));
+const sectionLinks=[...document.querySelectorAll('.case-toc a')];
+const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){sectionLinks.forEach(link=>{if(link.hash==='#'+entry.target.id)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current')})}},{rootMargin:'-15% 0px -65% 0px'});
+document.querySelectorAll('.case-section').forEach(section=>observer.observe(section));
