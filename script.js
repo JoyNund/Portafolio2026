@@ -1,3 +1,4 @@
+function projectClientIdentity(name){const c=(window.CLIENT_LOGOS||{})[name];return '<span class="client-identity">'+(c?'<span class="client-mark logo-'+c.tone+'"><img src="'+c.logo+'" alt="Logo de '+name+'" width="104" height="48" loading="lazy"></span>':'')+'<span class="client-copy"><span class="client-label">Cliente</span><span class="client-name">'+name+'</span></span></span>';}
 // Theme Toggle (Dark Mode)
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
@@ -457,158 +458,6 @@ const projects = [
                     La inclusión de notas personales y chat integrado redujo la necesidad
                     de herramientas externas, manteniendo a los equipos enfocados en
                     una sola plataforma.
-                `
-            }
-        ]
-    },
-    {
-        title: 'Radio Vesánico',
-        description: 'Radio y portal web de rock de culto y dark wave con CMS propio',
-        image: 'project9/cover.png',
-        categories: ['Desarrollo web', 'Streaming', 'CMS'],
-        tagline: 'La voz del rock de culto y dark wave: promueve bandas locales, transmite 24/7 y conecta a la escena alternativa peruana',
-        fullDescription: `
-            Radio Vesánico es una plataforma integral que combina radio en streaming,
-            portal de noticias y web app interactiva. Orientada a la música rock de culto
-            y dark wave, promueve bandas locales del Perú y cuenta con un CMS personalizado
-            para gestionar noticias, eventos, programación y podcasts. Su reproductor
-            incorpora un visualizer con Web Audio API que reacciona a la intensidad de la música.
-        `,
-        role: 'Desarrollador Full Stack & Diseñador de Producto',
-        client: 'Radio Vesánico',
-        duration: '3 meses',
-        year: '2024',
-        challenge: `
-            La escena de rock de culto y dark wave en Perú carecía de un espacio digital
-            unificado que combinara transmisión en vivo, difusión de bandas locales y
-            contenido editorial. Se necesitaba una plataforma con identidad visual distintiva
-            que capturara la esencia oscura y alternativa del género.
-        `,
-        solution: `
-            Desarrollé Radio Vesánico como una web app completa con diseño inmersivo
-            y atmosférico. Incluye un CMS personalizado para autogestión de contenido,
-            streaming de audio 24/7, reproductor con visualizer en tiempo real, y secciones
-            dedicadas a noticias, eventos, programación y podcasts de la escena alternativa.
-        `,
-        process: [
-            {
-                title: 'Diseño Dark Wave',
-                description: `
-                    Desarrollé una UI inmersiva con predominancia negra, acentos en rojo
-                    intenso y matices violetas que capturan la esencia del dark wave y rock
-                    de culto. La interfaz incorpora el visualizer como elemento central,
-                    creando una experiencia visual que reacciona a la música en tiempo real.
-                `,
-                image: 'project9/p1.png',
-                caption: 'Interfaz dark wave con visualizer integrado'
-            },
-            {
-                title: 'CMS para Gestión de Contenido',
-                description: `
-                    Construí un panel de administración completo para gestionar noticias,
-                    eventos, podcasts y programación. El CMS permite publicar contenido
-                    dinámicamente sin intervención técnica, manteniendo el portal siempre
-                    actualizado con lo último de la escena alternativa.
-                `,
-                image: 'project9/p2.webp',
-                caption: 'Panel CMS de administración'
-            },
-            {
-                title: 'Visualizer con Web Audio API',
-                description: `
-                    Implementé un visualizer que analiza el espectro de audio en tiempo
-                    real usando Web Audio API. Las animaciones se intensifican con la música,
-                    mostrando frecuencias, picos de volumen y patrones visuales que hacen
-                    la experiencia más inmersiva.
-                `,
-                image: 'project9/p3.gif',
-                caption: 'Visualizer reaccionando al audio'
-            },
-            {
-                title: 'Portal de Noticias y Eventos',
-                description: `
-                    Creé una sección editorial dedicada a noticias de la escena dark wave
-                    y rock de culto, además de un calendario de eventos donde los usuarios
-                    pueden descubrir conciertos, lanzamientos y actividades relacionadas.
-                `,
-                image: 'project9/p4.webp',
-                caption: 'Portal de noticias y eventos'
-            },
-            {
-                title: 'Parrilla de Programación',
-                description: `
-                    Diseñé un calendario interactivo que muestra la programación semanal
-                    de la radio. Los usuarios pueden ver qué programas están al aire,
-                    explorar la parrilla por días y configurar recordatorios para sus
-                    programas favoritos.
-                `,
-                image: 'project9/p5.webp',
-                caption: 'Calendario con programación semanal'
-            },
-            {
-                title: 'Panel de Comentarios Interactivo',
-                description: `
-                    Integré un sistema de comentarios en tiempo real que permite a los
-                    oyentes interactuar durante las transmisiones, solicitar canciones y
-                    participar en la comunidad. El panel se sincroniza con el reproductor
-                    para mostrar comentarios contextualizados a cada tema.
-                `,
-                image: 'project9/p6.webp',
-                caption: 'Panel de comentarios en vivo'
-            },
-            {
-                title: 'Widget de Letras LRCLIB',
-                description: `
-                    Incorporé integración con LRCLIB para mostrar letras sincronizadas
-                    de las canciones en reproducción. El widget muestra la letra en tiempo
-                    real, resaltando el verso actual y permitiendo a los usuarios seguir
-                    la música mientras leen.
-                `,
-                image: 'project9/p7.webp',
-                caption: 'Widget de letras sincronizadas'
-            }
-        ],
-        results: [
-            {
-                metric: '40+',
-                description: 'Bandas locales promovidas'
-            },
-            {
-                metric: '7K+',
-                description: 'Oyentes mensuales'
-            },
-            {
-                metric: '24/7',
-                description: 'Transmisión continua'
-            },
-            {
-                metric: '150+',
-                description: 'Noticias y eventos publicados'
-            }
-        ],
-        learnings: [
-            {
-                title: 'Identidad Visual Fuerte',
-                description: `
-                    Un diseño coherente con la esencia del género musical fue crucial
-                    para conectar con la audiencia objetivo y diferenciar la plataforma
-                    de otras opciones mainstream.
-                `
-            },
-            {
-                title: 'Web Audio API es Poderosa',
-                description: `
-                    El visualizer en tiempo real añadió una capa de inmersión que los
-                    usuarios valoraron enormemente, transformando la experiencia de solo
-                    audio en algo multisensorial.
-                `
-            },
-            {
-                title: 'Autogestión Empodera',
-                description: `
-                    El CMS personalizado permitió al equipo de Radio Vesánico publicar
-                    contenido sin depender de desarrolladores, agilizando la cobertura
-                    de eventos y noticias de la escena.
                 `
             }
         ]
@@ -1158,6 +1007,7 @@ function loadProjects(filter = 'all') {
                 </div>
             </div>
             <div class="p-6">
+                ${projectClientIdentity(project.client || 'Proyecto propio')}
                 <h3 class="text-xl font-semibold mb-2 group-hover:text-cyan-500 transition-colors">
                     ${project.title}
                 </h3>
@@ -1197,7 +1047,7 @@ function openProjectModal(project) {
     
     // Información básica
     modal.querySelector('.project-role').textContent = project.role || '';
-    modal.querySelector('.project-client').textContent = project.client || '';
+    modal.querySelector('.project-client').innerHTML = projectClientIdentity(project.client || 'Proyecto propio');
     modal.querySelector('.project-year').textContent = project.year || '';
     modal.querySelector('.project-duration').textContent = project.duration || '';
     

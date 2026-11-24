@@ -1,4 +1,25 @@
-// Public case studies. Demonstration records are fictional and never saved to production.
+window.CLIENT_LOGOS = {
+  "CasaGold": {
+    "logo": "/cases/logos/casagold.svg",
+    "tone": "light"
+  },
+  "Intiwasi Spanish Immersion School": {
+    "logo": "/cases/logos/intiwasi.png",
+    "tone": "light"
+  },
+  "BeAware": {
+    "logo": "/cases/logos/beaware.svg",
+    "tone": "dark"
+  },
+  "Radio Vesánico": {
+    "logo": "/cases/logos/radio-vesanico.png",
+    "tone": "dark"
+  },
+  "RE/MAX Focus": {
+    "logo": "/cases/logos/remax-focus.webp",
+    "tone": "light"
+  }
+};
 window.CASE_STUDIES = [
   {
     "slug": "beaware-recruit",
@@ -1097,5 +1118,110 @@ window.CASE_STUDIES = [
       "controla-studio"
     ],
     "demoNote": "Las listas, destinatarios y contenido comercial de los ejemplos son ficticios. Las capturas no corresponden a envíos realizados."
+  },
+  {
+    "slug": "radio-vesanico",
+    "title": "Radio Vesánico · Plataforma de radio y contenidos",
+    "client": "Radio Vesánico",
+    "description": "Una radio independiente que reúne transmisión, noticias, agenda, programas, podcasts y tienda en una sola plataforma.",
+    "tagline": "De una señal de radio a un medio digital con identidad propia.",
+    "image": "/cases/images/radio-home.webp",
+    "categories": [
+      "Aplicaciones",
+      "Streaming",
+      "CMS"
+    ],
+    "type": "Plataforma de medios digitales",
+    "year": "2026",
+    "role": "Diseño de experiencia y desarrollo de la plataforma web",
+    "intro": "La nueva web de Radio Vesánico organiza la experiencia del oyente alrededor de la transmisión y la conecta con la actividad editorial y cultural de la radio. Un mismo producto reúne escucha, noticias, agenda, programación, podcasts y una tienda, con una identidad visual de alto contraste y una navegación adaptada a móvil.",
+    "challenge": "Una radio digital necesita dar continuidad a la escucha mientras el público descubre noticias, programas y actividades. La presentación del contenido debe conservar la personalidad del medio y permitir que cada sección tenga su propio espacio dentro de una experiencia coherente.",
+    "solution": "Una plataforma con reproductor principal y minirreproductor persistente, secciones editoriales separadas, programación por días, catálogo de podcasts y una tienda pública. La nueva interfaz utiliza tipografía expresiva, contraste y acentos de color para dar una identidad común a las distintas funciones.",
+    "tech": [
+      "React",
+      "JavaScript",
+      "Streaming de audio",
+      "API de contenidos"
+    ],
+    "flow": [
+      "Entrar a la radio",
+      "Consultar la transmisión",
+      "Explorar noticias y agenda",
+      "Descubrir programas y podcasts",
+      "Visitar la tienda o apoyar la radio"
+    ],
+    "sections": [
+      {
+        "id": "escucha",
+        "title": "La transmisión como punto de entrada",
+        "body": "La portada muestra el tema en reproducción y los controles de escucha y volumen. Al recorrer otras pantallas aparece un minirreproductor inferior que mantiene accesible el control de la radio sin ocupar el centro de cada sección.",
+        "image": "/cases/images/radio-home.webp",
+        "caption": "Portada actual de radiovesanico.com, con identidad editorial, transmisión y acceso directo a la escucha."
+      },
+      {
+        "id": "noticias",
+        "title": "Un espacio editorial para la escena musical",
+        "body": "Noticias dispone de una pantalla propia para consultar la cobertura de la radio. La plataforma diferencia el contenido editorial de la transmisión, manteniendo la navegación y la identidad compartidas.",
+        "image": "/cases/images/radio-noticias.webp",
+        "caption": "Sección pública de noticias de la nueva plataforma."
+      },
+      {
+        "id": "agenda",
+        "title": "Agenda que conecta el medio con los eventos",
+        "body": "La agenda presenta conciertos y actividades de la escena. La vista también separa los eventos pasados, de modo que el contenido puede conservarse como archivo sin confundirse con próximas fechas.",
+        "image": "/cases/images/radio-agenda.webp",
+        "caption": "Agenda pública con acceso a eventos y archivo de actividades pasadas."
+      },
+      {
+        "id": "programas",
+        "title": "Programación organizada por días",
+        "body": "La pantalla Programas permite recorrer la semana mediante pestañas. Cada programa presenta nombre, descripción, hora y duración para que el oyente identifique los espacios que le interesan.",
+        "image": "/cases/images/radio-programas.webp",
+        "caption": "Parrilla semanal con selección de día y fichas de programas; el minirreproductor permanece disponible."
+      },
+      {
+        "id": "podcasts",
+        "title": "Contenido para escuchar fuera del directo",
+        "body": "La sección de podcasts da un lugar propio al contenido bajo demanda. Esta separación amplía la experiencia más allá del tema que esté sonando en vivo y facilita descubrir otras publicaciones de la radio.",
+        "image": "/cases/images/radio-podcast.webp",
+        "caption": "Pantalla de podcasts integrada en la navegación del medio."
+      },
+      {
+        "id": "tienda",
+        "title": "Una dimensión comercial dentro del mismo producto",
+        "body": "La tienda tiene una sección propia para presentar merchandising y productos de sellos independientes. Comparte la estructura de navegación y la identidad de la radio, integrando el catálogo en la experiencia del medio.",
+        "image": "/cases/images/radio-tienda.webp",
+        "caption": "Catálogo público de la tienda. La revisión no incluyó compras ni pagos."
+      },
+      {
+        "id": "movil",
+        "title": "La misma identidad en una pantalla pequeña",
+        "body": "La composición adapta el encabezado, la tipografía y la transmisión a móvil. La prioridad es que el oyente encuentre la radio y pueda continuar explorando el contenido sin depender de una interfaz de escritorio.",
+        "image": "/cases/images/radio-mobile.webp",
+        "caption": "Vista móvil real de la portada actual, capturada a 390 píxeles de ancho."
+      },
+      {
+        "id": "administracion",
+        "title": "CMS y acceso de administración separado",
+        "body": "El proyecto cuenta con una entrada de administración separada y protegida por inicio de sesión. La autogestión editorial forma parte de la plataforma: la radio dispone de un espacio de trabajo propio, mientras el público accede a las publicaciones y a la escucha desde el sitio principal."
+      }
+    ],
+    "links": [
+      {
+        "label": "Visitar Radio Vesánico",
+        "url": "https://radiovesanico.com/"
+      }
+    ],
+    "related": [
+      "intiwasi-web",
+      "beaware-web",
+      "controla-studio"
+    ],
+    "outcomes": [
+      "Una experiencia común para transmisión y contenido editorial.",
+      "Programación semanal, archivo de podcasts y agenda accesibles desde la misma navegación.",
+      "Un espacio comercial integrado mediante la tienda pública.",
+      "Controles de escucha persistentes al explorar otras secciones."
+    ]
   }
 ];

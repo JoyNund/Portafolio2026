@@ -19,3 +19,6 @@ Los datos privados se sustituyeron únicamente en la vista del navegador antes d
 El contenido describe funciones revisadas en interfaces y código, junto con las aclaraciones del autor. No se añadieron porcentajes de mejora ni resultados comerciales sin medición.
 
 Recruit genera las páginas de convocatoria y el portal las lista automáticamente. La configuración de cada convocatoria determina la postulación por formulario o por WhatsApp cuando tiene bot habilitado.
+
+Los logos de clientes fueron proporcionados por el autor: CasaGold, Intiwasi, BeAware, Radio Vesánico y RE/MAX Focus. Los archivos originales se alojan localmente en cases/logos, sin depender de los enlaces externos. Los fondos respetan el contraste de cada marca.
+Radio Vesánico se actualizó con la web pública radiovesanico.com: portada, noticias, agenda, programas, podcasts, tienda y vista móvil. Las capturas son del sitio público. Se verificó el acceso de administración protegido, sin iniciar sesión. Se sustituyó el proyecto anterior y se retiraron sus cifras de audiencia no verificadas.
