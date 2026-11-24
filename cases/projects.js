@@ -1,4 +1,6 @@
 window.CLIENT_LOGOS = {
+  "PatLad": {"logo":"/cases/logos/patlad.png","tone":"light"},
+  "wav.e productora": {"logo":"/cases/logos/wave-productora.png","tone":"dark"},
   "CasaGold": {
     "logo": "/cases/logos/casagold.svg",
     "tone": "light"

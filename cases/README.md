@@ -22,3 +22,5 @@ Recruit genera las páginas de convocatoria y el portal las lista automáticamen
 
 Los logos de clientes fueron proporcionados por el autor: CasaGold, Intiwasi, BeAware, Radio Vesánico y RE/MAX Focus. Los archivos originales se alojan localmente en cases/logos, sin depender de los enlaces externos. Los fondos respetan el contraste de cada marca.
 Radio Vesánico se actualizó con la web pública radiovesanico.com: portada, noticias, agenda, programas, podcasts, tienda y vista móvil. Las capturas son del sitio público. Se verificó el acceso de administración protegido, sin iniciar sesión. Se sustituyó el proyecto anterior y se retiraron sus cifras de audiencia no verificadas.
+
+La marca antes identificada como Raw Productora se corrigió a wav.e productora. Su logo fue proporcionado por el autor. El logo de PatLad (Patrulla Ladrido) se recreó en PNG con transparencia a partir de la referencia del autor mediante la herramienta integrada de generación de imágenes; se conserva el original adjunto sin modificar.

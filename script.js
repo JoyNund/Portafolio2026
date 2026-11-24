@@ -784,7 +784,7 @@ const projects = [
             en el contexto de la pandemia durante el año 2020.
         `,
         role: 'Director Creativo & Desarrollador',
-        client: 'Raw Productora',
+        client: 'wav.e productora',
         duration: '3 meses',
         year: '2020',
         challenge: `
