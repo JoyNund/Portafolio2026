@@ -8,6 +8,9 @@ const imageNav=document.createElement('div');imageNav.className='viewer-controls
 const previousImage=document.createElement('button'), nextImage=document.createElement('button'), imagePosition=document.createElement('span');
 previousImage.type=nextImage.type='button';previousImage.textContent='Anterior';nextImage.textContent='Siguiente';imagePosition.setAttribute('aria-live','polite');
 imageNav.append(previousImage,imagePosition,nextImage);imageDialog.querySelector('img').before(imageNav);
+const viewerToolbar=document.createElement('div');viewerToolbar.className='viewer-toolbar';
+const viewerClose=document.getElementById('close-image');viewerClose.textContent='Cerrar';viewerClose.setAttribute('aria-label','Cerrar captura');
+viewerToolbar.append(imageNav,viewerClose);imageDialog.prepend(viewerToolbar);
 function showImageAt(index){imageIndex=index;const button=uniqueImages[index],img=button.querySelector('img');imageDialog.querySelector('img').src=img.src;imageDialog.querySelector('img').alt=img.alt;imageDialog.querySelector('p').textContent=button.closest('figure').querySelector('figcaption').textContent;imagePosition.textContent=`Captura ${index+1} de ${uniqueImages.length}`;previousImage.disabled=index===0;nextImage.disabled=index===uniqueImages.length-1;imageDialog.scrollTop=0;}
 imageButtons.forEach(button=>button.addEventListener('click',()=>{imageTrigger=button;showImageAt(uniqueImages.findIndex(item=>item.querySelector('img').src===button.querySelector('img').src));imageDialog.showModal()}));
 previousImage.addEventListener('click',()=>showImageAt(imageIndex-1));nextImage.addEventListener('click',()=>showImageAt(imageIndex+1));

@@ -1,6 +1,13 @@
+// Public examples use fictional private data; no production records changed for screenshots.
 window.CLIENT_LOGOS = {
-  "PatLad": {"logo":"/cases/logos/patlad.png","tone":"light"},
-  "wav.e productora": {"logo":"/cases/logos/wave-productora.png","tone":"dark"},
+  "PatLad": {
+    "logo": "/cases/logos/patlad.png",
+    "tone": "light"
+  },
+  "wav.e productora": {
+    "logo": "/cases/logos/wave-productora.png",
+    "tone": "dark"
+  },
   "CasaGold": {
     "logo": "/cases/logos/casagold.svg",
     "tone": "light"
@@ -70,7 +77,9 @@ window.CASE_STUDIES = [
           "Captura de información y recepción del CV dentro del mismo recorrido.",
           "Registro del postulante asociado a la convocatoria y continuidad del seguimiento."
         ],
-        "note": "Integración implementada con Baileys sobre sesiones de WhatsApp Web."
+        "note": "Integración implementada con Baileys sobre sesiones de WhatsApp Web.",
+        "image": "/cases/images/recruit-whatsapp.webp",
+        "caption": "Conexiones de WhatsApp y convocatorias vinculadas. Los nombres y teléfonos son ficticios; no se modificaron conexiones."
       },
       {
         "id": "publicacion",
@@ -85,7 +94,17 @@ window.CASE_STUDIES = [
         "related": "beaware-empleos",
         "relatedLabel": "Explorar el portal de empleos",
         "image": "/cases/images/recruit-publica.webp",
-        "caption": "Página de convocatoria generada por Recruit, presentada como una oferta de demostración. Incluye la entrada al formulario y a WhatsApp."
+        "caption": "Página de convocatoria generada por Recruit, presentada como una oferta de demostración. Incluye la entrada al formulario y a WhatsApp.",
+        "gallery": [
+          {
+            "image": "/cases/images/recruit-convocatoria.webp",
+            "caption": "Definición de una convocatoria: información general, cliente y agente de conversación. Ejemplo ficticio sin crear la convocatoria."
+          },
+          {
+            "image": "/cases/images/recruit-publicacion-config.webp",
+            "caption": "Configuración del contenido de la página pública que Recruit genera y el portal de empleos incorpora a su catálogo."
+          }
+        ]
       },
       {
         "id": "flujos",
@@ -118,7 +137,13 @@ window.CASE_STUDIES = [
         ],
         "note": "Los puntajes apoyan la revisión del reclutador. No se presentan como una garantía de idoneidad ni como una decisión final de contratación.",
         "image": "/cases/images/recruit-ia.webp",
-        "caption": "Configuración de proveedor y modelo de IA. Las credenciales visibles son ficticias y no válidas."
+        "caption": "Configuración de proveedor y modelo de IA. Las credenciales visibles son ficticias y no válidas.",
+        "gallery": [
+          {
+            "image": "/cases/images/recruit-evaluacion-pesos.webp",
+            "caption": "Criterios de evaluación curricular y ponderación de habilidades, educación y experiencia, junto con las etapas del proceso."
+          }
+        ]
       },
       {
         "id": "operacion",
@@ -219,6 +244,19 @@ window.CASE_STUDIES = [
         "caption": "Dashboard del asesor con cifras ficticias para explicar cartera, conversión y comisiones."
       },
       {
+        "id": "administracion-global",
+        "title": "Administración global y trabajo por rol",
+        "body": "El administrador tiene una vista de toda la operación: cartera activa, valor del portafolio, oportunidades, cierres y comparación entre asesores. La vista de un asesor concentra su propia actividad. Esta diferencia convierte los permisos en una parte del flujo de trabajo, con herramientas ajustadas a la responsabilidad de cada usuario.",
+        "image": "/cases/images/casagold-global.webp",
+        "caption": "Indicadores del panel global de administración con cifras ficticias. No representan resultados comerciales reales.",
+        "gallery": [
+          {
+            "image": "/cases/images/casagold-roles.webp",
+            "caption": "Gestión de usuarios y roles con nombres, cuentas y asignaciones de propiedades ficticios. No se creó ni editó ningún usuario."
+          }
+        ]
+      },
+      {
         "id": "crm",
         "title": "El seguimiento comercial, visto de cerca",
         "body": "El CRM organiza las oportunidades por origen y estado y permite buscar contactos, registrar comentarios y dar continuidad a cada consulta. El registro manual complementa las entradas que llegan desde formularios y conexiones.",
@@ -244,6 +282,13 @@ window.CASE_STUDIES = [
         "body": "Los expedientes relacionan una propiedad con la operación y sus participantes. El formulario organiza datos del vendedor o arrendador, comprador o arrendatario, contrato principal y anexos.",
         "image": "/cases/images/casagold-expediente.webp",
         "caption": "Creación de expediente operativo con campos de ejemplo ficticios. No se registró una operación ni se subieron documentos."
+      },
+      {
+        "id": "colecciones",
+        "title": "Colecciones para organizar y presentar la cartera",
+        "body": "Una colección reúne una selección de propiedades bajo un nombre, una etiqueta y una descripción propios. El equipo puede preparar selecciones comerciales sin duplicar las fichas de cada inmueble: la cartera alimenta distintas formas de presentarla.",
+        "image": "/cases/images/casagold-coleccion.webp",
+        "caption": "Formulario de colección con selección de propiedades y textos ficticios. El ejemplo no se guardó."
       },
       {
         "id": "asesores",
@@ -365,6 +410,13 @@ window.CASE_STUDIES = [
         ]
       },
       {
+        "id": "aula-docente",
+        "title": "Una mesa de trabajo para el docente",
+        "body": "My Classes reúne la lista del aula con accesos a unidades, calificaciones, asistencia, autorizaciones, familias, álbum, anuncios y recursos. La pantalla organiza estas funciones alrededor de la clase y del estudiante, para que el docente continúe el trabajo sin reconstruir el contexto en módulos separados.",
+        "image": "/cases/images/tinkuy-clases.webp",
+        "caption": "Vista docente del aula Discovery Classroom (Demo), con el estudiante ficticio Alex Demo."
+      },
+      {
         "id": "comunicacion",
         "title": "Una comunidad que conversa",
         "body": "Los canales de clase y los mensajes directos conectan al equipo con las familias. El feed admite publicaciones con contenido visual y texto enriquecido. La comunicación incorpora lectura, reacciones y notificaciones para acompañar el uso diario.",
@@ -406,7 +458,13 @@ window.CASE_STUDIES = [
         "title": "Un reporte que reúne la información del estudiante",
         "body": "El reporte del estudiante concentra progreso académico, evaluaciones registradas, asistencia, logros y observaciones. La familia puede consultar el contexto de aprendizaje en una vista que complementa las unidades y el calendario.",
         "image": "/cases/images/tinkuy-report.jpg",
-        "caption": "Reporte académico con el estudiante Alex Demo y datos escolares ficticios."
+        "caption": "Reporte académico con el estudiante Alex Demo y datos escolares ficticios.",
+        "gallery": [
+          {
+            "image": "/cases/images/tinkuy-progreso.webp",
+            "caption": "Panel de progreso con insignias y accesos a reportes, pruebas, calificaciones y configuración en el entorno de demostración."
+          }
+        ]
       },
       {
         "id": "detalle-unidad",
@@ -426,6 +484,20 @@ window.CASE_STUDIES = [
           "Tienda, pedidos y servicios vinculados a la operación escolar."
         ],
         "note": "Este caso describe el producto y su implementación. No presupone disponibilidad pública en las tiendas de aplicaciones."
+      },
+      {
+        "id": "asistencia-qr",
+        "title": "Asistencia con un recorrido propio",
+        "body": "La sección Check-in QR concentra los controles de asistencia y lectura de códigos. Esta función convive con la comunicación y el seguimiento académico dentro del portal, mientras los permisos determinan las acciones disponibles para cada rol.",
+        "image": "/cases/images/tinkuy-asistencia.webp",
+        "caption": "Pantalla de asistencia de la instancia de demostración. Los registros corresponden al entorno ficticio."
+      },
+      {
+        "id": "cuidados-diarios",
+        "title": "Cuidados diarios con información estructurada",
+        "body": "Desde el aula, el docente puede abrir un reporte diario del estudiante y registrar descanso, alimentación, bebidas, higiene, protección solar, observaciones y fotos. El formulario convierte información cotidiana en un registro consultable por las familias, con campos específicos para cada tipo de cuidado.",
+        "image": "/cases/images/tinkuy-cuidados.webp",
+        "caption": "Formulario de cuidados diarios de Alex Demo. Se abrió para demostrar los campos; no se guardó ningún reporte."
       }
     ],
     "outcomes": [
@@ -690,7 +762,8 @@ window.CASE_STUDIES = [
     "related": [
       "controla-studio",
       "tinkuy"
-    ]
+    ],
+    "displayGroup": "content"
   },
   {
     "slug": "beaware-empleos",
@@ -889,7 +962,8 @@ window.CASE_STUDIES = [
     "related": [
       "beaware-recruit",
       "beaware-empleos"
-    ]
+    ],
+    "displayGroup": "content"
   },
   {
     "slug": "intiwasi-sms-marketing",
@@ -956,6 +1030,10 @@ window.CASE_STUDIES = [
           {
             "image": "/cases/images/sms-campana.webp",
             "caption": "Formulario de nueva campaña con nombre, segmento y mensaje. No se creó ni se envió una campaña."
+          },
+          {
+            "image": "/cases/images/sms-segmento.webp",
+            "caption": "Creación de un segmento con nombre y color. Ejemplo de demostración sin guardar."
           }
         ]
       },
@@ -965,6 +1043,13 @@ window.CASE_STUDIES = [
         "body": "El envío manual permite seleccionar un contacto o indicar un número, redactar el mensaje y utilizar variables de personalización. La interfaz muestra el contador de caracteres y distingue el texto simple del contenido multimedia.",
         "image": "/cases/images/sms-manual.webp",
         "caption": "Pantalla de SMS manual sin destinatario seleccionado. No se envió ningún mensaje."
+      },
+      {
+        "id": "automatizaciones",
+        "title": "Mensajes que forman parte de un flujo automatizado",
+        "body": "El portal permite definir una automatización con nombre, plantilla y segmento de destinatarios. Las variables del mensaje reutilizan datos del contacto. La interfaz también presenta la conexión con Google Sheets para enlazar la captación con las comunicaciones, en lugar de preparar cada mensaje de forma aislada.",
+        "image": "/cases/images/sms-automatizacion.webp",
+        "caption": "Configuración de automatización con una plantilla ficticia. No se creó la automatización ni se enviaron mensajes."
       },
       {
         "id": "conversiones",
@@ -1060,6 +1145,27 @@ window.CASE_STUDIES = [
           {
             "image": "/cases/images/newsletter-mobile.webp",
             "caption": "Revisión de la plantilla semanal en modo móvil dentro de Newsletter Studio, sin guardar ni enviar una edición."
+          },
+          {
+            "image": "/cases/images/newsletter-bloques.webp",
+            "caption": "Edición de un bloque de contenido dentro de una plantilla semanal, con el resultado junto a los controles."
+          },
+          {
+            "image": "/cases/images/newsletter-estilos.webp",
+            "caption": "Controles de cabecera y estilo del newsletter. Los cambios de esta revisión permanecieron en el navegador."
+          }
+        ]
+      },
+      {
+        "id": "audiencias",
+        "title": "Audiencias separadas de la composición del correo",
+        "body": "Mailer organiza a los destinatarios en listas que pueden importarse, consultarse, renombrarse y exportarse. Al abrir una lista, el equipo puede revisar sus contactos antes de seleccionarla para una campaña. Separar esta administración del editor facilita reutilizar las mismas audiencias en distintas comunicaciones.",
+        "image": "/cases/images/mailer-listas.webp",
+        "caption": "Administración de listas de correo con nombres de demostración.",
+        "gallery": [
+          {
+            "image": "/cases/images/mailer-contactos.webp",
+            "caption": "Contactos de una lista con nombres y correos completamente ficticios. No se añadieron, eliminaron ni exportaron contactos."
           }
         ]
       },
@@ -1123,42 +1229,51 @@ window.CASE_STUDIES = [
   },
   {
     "slug": "radio-vesanico",
-    "title": "Radio Vesánico · Plataforma de radio y contenidos",
+    "title": "Radio Vesánico · Radio interactiva y gestión editorial",
     "client": "Radio Vesánico",
-    "description": "Una radio independiente que reúne transmisión, noticias, agenda, programas, podcasts y tienda en una sola plataforma.",
-    "tagline": "De una señal de radio a un medio digital con identidad propia.",
-    "image": "/cases/images/radio-home.webp",
+    "description": "Reproductor inmersivo, comentarios, CMS editorial y tienda conectados con un servidor AzuraCast personalizado.",
+    "tagline": "Escucha, comunidad y operación de la radio en un mismo ecosistema.",
+    "image": "/cases/images/radio-player.webp",
     "categories": [
       "Aplicaciones",
       "Streaming",
       "CMS"
     ],
-    "type": "Plataforma de medios digitales",
+    "type": "Plataforma de radio y gestión de contenidos",
     "year": "2026",
     "role": "Diseño de experiencia y desarrollo de la plataforma web",
-    "intro": "La nueva web de Radio Vesánico organiza la experiencia del oyente alrededor de la transmisión y la conecta con la actividad editorial y cultural de la radio. Un mismo producto reúne escucha, noticias, agenda, programación, podcasts y una tienda, con una identidad visual de alto contraste y una navegación adaptada a móvil.",
+    "intro": "Desarrollé la experiencia web de Radio Vesánico como una plataforma que conecta la escucha y la comunidad con el trabajo del equipo editorial. El modo reproductor reúne la transmisión, la identidad visual y los comentarios; el CMS administra noticias, eventos, programas, podcasts, fuentes de audio y catálogo. La infraestructura de streaming utiliza AzuraCast personalizado e integrado con la web: una herramienta existente que configuré y adapté dentro de la solución.",
     "challenge": "Una radio digital necesita dar continuidad a la escucha mientras el público descubre noticias, programas y actividades. La presentación del contenido debe conservar la personalidad del medio y permitir que cada sección tenga su propio espacio dentro de una experiencia coherente.",
-    "solution": "Una plataforma con reproductor principal y minirreproductor persistente, secciones editoriales separadas, programación por días, catálogo de podcasts y una tienda pública. La nueva interfaz utiliza tipografía expresiva, contraste y acentos de color para dar una identidad común a las distintas funciones.",
+    "solution": "Una experiencia de escucha con modo inmersivo y participación, un CMS propio para operar el medio y una integración con la infraestructura de streaming. Cada capa cumple una función: el oyente escucha y conversa, el equipo publica y gestiona, y AzuraCast administra la estación y los medios de audio.",
     "tech": [
       "React",
       "JavaScript",
-      "Streaming de audio",
-      "API de contenidos"
+      "CMS a medida",
+      "Integración con AzuraCast",
+      "Icecast",
+      "Liquidsoap",
+      "LRCLIB"
     ],
     "flow": [
-      "Entrar a la radio",
-      "Consultar la transmisión",
-      "Explorar noticias y agenda",
-      "Descubrir programas y podcasts",
-      "Visitar la tienda o apoyar la radio"
+      "Administrar la estación de streaming",
+      "Configurar la fuente en el CMS",
+      "Publicar contenidos y catálogo",
+      "Escuchar en el modo reproductor",
+      "Participar en los comentarios"
     ],
     "sections": [
       {
         "id": "escucha",
-        "title": "La transmisión como punto de entrada",
-        "body": "La portada muestra el tema en reproducción y los controles de escucha y volumen. Al recorrer otras pantallas aparece un minirreproductor inferior que mantiene accesible el control de la radio sin ocupar el centro de cada sección.",
-        "image": "/cases/images/radio-home.webp",
-        "caption": "Portada actual de radiovesanico.com, con identidad editorial, transmisión y acceso directo a la escucha."
+        "title": "Modo reproductor: la radio pasa al primer plano",
+        "body": "Al entrar al modo reproductor, la interfaz se concentra en la emisión: carátula en forma de disco, tema en reproducción, volumen, controles y acceso a letras. Los comentarios se integran como un panel lateral para que escuchar y participar formen parte de la misma experiencia.",
+        "image": "/cases/images/radio-player.webp",
+        "caption": "Modo reproductor completo con controles de escucha y panel lateral. Los aliases y mensajes fueron sustituidos por ejemplos ficticios.",
+        "gallery": [
+          {
+            "image": "/cases/images/radio-comentarios.webp",
+            "caption": "Detalle de la comunidad de oyentes y del formulario para participar. Los mensajes son ficticios y no se envió ningún comentario."
+          }
+        ]
       },
       {
         "id": "noticias",
@@ -1204,8 +1319,56 @@ window.CASE_STUDIES = [
       },
       {
         "id": "administracion",
-        "title": "CMS y acceso de administración separado",
-        "body": "El proyecto cuenta con una entrada de administración separada y protegida por inicio de sesión. La autogestión editorial forma parte de la plataforma: la radio dispone de un espacio de trabajo propio, mientras el público accede a las publicaciones y a la escucha desde el sitio principal."
+        "title": "CMS editorial para operar el medio",
+        "body": "El CMS propio separa el trabajo del equipo del recorrido público del oyente. Desde su panel se administran noticias, eventos, podcasts y programas; el editor de noticias incluye título, fecha, categoría, firma, imagen, descripción, contenido enriquecido y etiquetas, con acciones diferenciadas para borrador y publicación.",
+        "image": "/cases/images/radio-cms-dashboard.webp",
+        "caption": "Panel del CMS con accesos a los módulos de operación. Los contadores se prepararon con cifras ficticias.",
+        "gallery": [
+          {
+            "image": "/cases/images/radio-cms-noticias.webp",
+            "caption": "Administración de noticias con búsqueda, estados de publicación y orden por fecha. Se revisó el listado de noticias publicadas."
+          },
+          {
+            "image": "/cases/images/radio-cms-editor.webp",
+            "caption": "Editor de noticia con contenido de demostración, sin guardar borrador ni publicar."
+          }
+        ]
+      },
+      {
+        "id": "fuentes-stream",
+        "title": "La fuente de audio se gestiona desde el CMS",
+        "body": "La configuración permite indicar la URL de streaming, el servicio de letras, los aliases de moderación y la información de la estación. El equipo dispone así de un punto propio para conectar la emisión con la experiencia pública de la radio.",
+        "image": "/cases/images/radio-cms-stream.webp",
+        "caption": "Configuración de la fuente de audio y moderación. Las URLs y aliases de administración visibles son ficticios; no se guardó la configuración."
+      },
+      {
+        "id": "operacion-tienda",
+        "title": "Productos y órdenes dentro de la operación del medio",
+        "body": "El módulo de tienda separa catálogo, órdenes y configuración de pagos. El formulario de producto reúne nombre, precio, stock, categoría, imagen y descripción para administrar la oferta desde el mismo CMS. La revisión se limitó a la interfaz y no incluyó compras ni pruebas de cobro.",
+        "image": "/cases/images/radio-cms-producto.webp",
+        "caption": "Formulario de producto con nombre, precio, stock y descripción ficticios. El producto no se creó."
+      },
+      {
+        "id": "infraestructura-streaming",
+        "title": "AzuraCast personalizado como infraestructura de streaming",
+        "body": "La radio integra AzuraCast para la administración técnica de la emisión. La personalización adapta la identidad de Vesánico al panel y enlaza la estación con su reproductor público. La administración de estaciones, los archivos de música y las listas de reproducción forman parte de esta capa operativa. AzuraCast es software de terceros: mi trabajo aquí es su configuración, personalización e integración con la solución.",
+        "image": "/cases/images/radio-azura-estacion.webp",
+        "caption": "Panel personalizado de la estación, con acceso a emisión, servicios de Icecast y Liquidsoap, y páginas públicas. No se alteró el estado de los servicios.",
+        "gallery": [
+          {
+            "image": "/cases/images/radio-azura-estaciones.webp",
+            "caption": "Administración de estaciones de AzuraCast con la identidad visual de Radio Vesánico."
+          },
+          {
+            "image": "/cases/images/radio-azura-medios.webp",
+            "caption": "Biblioteca de medios del servidor de streaming, con nombres de archivo de demostración."
+          },
+          {
+            "image": "/cases/images/radio-azura-playlists.webp",
+            "caption": "Gestión de listas de reproducción dentro del servidor de streaming."
+          }
+        ],
+        "note": "La estación revisada indica una emisión gestionada desde RadioBOSS mediante BUTT. La revisión de AzuraCast fue de consulta: no se reinició, detuvo ni reconfiguró la transmisión."
       }
     ],
     "links": [
@@ -1220,10 +1383,11 @@ window.CASE_STUDIES = [
       "controla-studio"
     ],
     "outcomes": [
-      "Una experiencia común para transmisión y contenido editorial.",
-      "Programación semanal, archivo de podcasts y agenda accesibles desde la misma navegación.",
-      "Un espacio comercial integrado mediante la tienda pública.",
-      "Controles de escucha persistentes al explorar otras secciones."
-    ]
+      "Una experiencia de escucha inmersiva con participación de la comunidad.",
+      "Un CMS propio para noticias, agenda, programas, podcasts, fuente de audio y catálogo.",
+      "Separación clara entre la experiencia del oyente, la operación editorial y la infraestructura de streaming.",
+      "Integración de AzuraCast personalizado dentro del ecosistema de la radio."
+    ],
+    "demoNote": "Los comentarios, aliases, datos de productos y cifras de las vistas de demostración son ficticios. La revisión no publicó contenidos, envió comentarios, creó productos ni cambió la configuración de emisión."
   }
 ];

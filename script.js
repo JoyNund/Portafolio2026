@@ -775,6 +775,7 @@ const projects = [
     },
     {
         title: 'Sonidos del Encierro',
+        displayGroup: 'content',
         description: 'Serie web trasmedia en el contexto de la pandemia',
         image: 'project3/cover.png',
         categories: ['Audiovisual', 'Ciberactivismo', 'Arte digital'],
@@ -971,8 +972,8 @@ function shuffle(array) {
 function loadProjects(filter = 'all') {
     const grid = document.querySelector('#proyectos .grid');
     if (!grid) return;
-    const recentProjects = (window.CASE_STUDIES || []).map(project => ({...project, caseUrl: `/proyectos/${project.slug}/`}));
-    const allProjects = [...recentProjects, ...projects];
+    const recentProjects = (window.CASE_STUDIES || []).filter(project => project.displayGroup !== 'content').map(project => ({...project, caseUrl: `/proyectos/${project.slug}/`}));
+    const allProjects = [...recentProjects, ...projects.filter(project => project.displayGroup !== 'content')];
     const filtered = allProjects.filter(project => {
         if (filter === 'apps') return project.categories.some(cat => ['Aplicaciones', 'Apps', 'CRM', 'Project Management', 'E-learning'].includes(cat));
         if (filter === 'cms') return project.categories.some(cat => ['Webs y CMS', 'CMS', 'Desarrollo web'].includes(cat));
@@ -1134,6 +1135,12 @@ document.getElementById('project-modal')?.addEventListener('keydown', (event) =>
         else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
     }
 });
+
+function loadContentProjects(){
+ const grid=document.getElementById('content-projects');if(!grid)return;grid.replaceChildren();
+ const items=[...(window.CASE_STUDIES||[]).filter(p=>p.displayGroup==='content').map(p=>({...p,caseUrl:'/proyectos/'+p.slug+'/'})),...projects.filter(p=>p.displayGroup==='content')];
+ items.forEach(p=>{const card=document.createElement(p.caseUrl?'a':'button');if(p.caseUrl)card.href=p.caseUrl;else{card.type='button';card.addEventListener('click',()=>openProjectModal(p));}card.className='content-project-card';card.innerHTML='<img class="content-cover" src="'+p.image+'" alt="'+p.title+'" loading="lazy" width="1440" height="1000"><div>'+projectClientIdentity(p.client)+'<h4>'+p.title+'</h4><p>'+p.description+'</p><span class="project-read-more">'+(p.caseUrl?'Ver sitio y contenidos':'Ver campaña')+'</span></div>';grid.append(card);});
+}
 
 // Load Portfolio Items
 let displayedItems = 0;
@@ -1407,6 +1414,7 @@ document.addEventListener('keydown', (e) => {
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
+    loadContentProjects();
     loadPortfolioItems();
 });
 
